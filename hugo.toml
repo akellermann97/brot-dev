@@ -1,0 +1,42 @@
+baseURL = 'https://brot.dev/'
+author = "Alex Kellermann"
+languageCode = 'en-us'
+title = 'brot.dev 🍞'
+theme = 'PaperMod'
+assetDir = 'static'
+enableInlineShortcodes = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+  [[menu.main]]
+    identifier = "photography"
+    name = "photography"
+    url = "/photography/"
+    weight = 10
+  [[menu.main]]
+    identifier = "security"
+    name = "security"
+    url = "/security/"
+    weight = 10
+  [[menu.main]]
+    identifier = "contact"
+    name = "contact"
+    url = "/about/"
+    weight = 10
+
+
+[params]
+  github = 'akellermann97'
+  instagram = '7traindelay'
+  color = 'linen'
+
+[[module.mounts]]
+    source = 'static'
+    target = 'static'
+[[module.mounts]]
+    source = 'assets'
+    target = 'static'
