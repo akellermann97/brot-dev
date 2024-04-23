@@ -2,7 +2,7 @@ baseURL = 'https://brot.dev/'
 author = "Alex Kellermann"
 languageCode = 'en-us'
 title = 'brot.dev 🍞'
-theme = 'PaperMod'
+theme = 'papermod'
 assetDir = 'static'
 enableInlineShortcodes = true
 
@@ -28,11 +28,6 @@ enableInlineShortcodes = true
     url = "/about/"
     weight = 10
 
-
-[params]
-  github = 'akellermann97'
-  instagram = '7traindelay'
-  color = 'linen'
 
 [[module.mounts]]
     source = 'static'

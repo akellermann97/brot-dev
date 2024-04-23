@@ -9,13 +9,11 @@
  <figcaption>
 <p>
   {{ $alt }}
-  {{with .Tags.Model }}{{ . }}{{ end }}   
-  {{with .Tags.LensModel }}{{ . }}{{ end }}   
-  {{ with .Tags.FNumber }}<i>@f</i>{{ . }}{{ end }}   
   {{ with .Tags.ExposureTime }}{{ . }}{{ end }}   
-  {{ with .Tags.FocalLength }}{{ . }}mm{{ end }}   
+  {{ with .Tags.FNumber }} <i>@f</i>{{ . }}{{ end }}   
   {{ with .Tags.ExposureTime }}{{ end }}   
   {{ with .Tags.ISOSpeedRatings }}ISO {{ . }}{{ end }}
+  {{ with .Tags.FocalLength }}{{ . }}mm{{ end }}   
   </p>
  </figcaption>
 

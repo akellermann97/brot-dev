@@ -1,12 +1,12 @@
-+++
-title = 'Q2 Long Term Review'
-date = 2024-02-02T16:57:54-05:00
-draft = true
-showtoc = true
-ShowReadingTime = true
-[cover]
-image = '/img/q2/q2_header.jpg'
-+++
+---
+title : 'Q2 Long Term Review'
+date : 2024-02-02T16:57:54-05:00
+draft : false
+showtoc : true
+ShowReadingTime : true
+cover:
+    image: '/img/q2/q2_header.jpg'
+---
 {{< rawhtml >}}
 <style>
 figure.entry-cover {
@@ -16,12 +16,6 @@ figure.entry-cover {
 }
 </style>
 {{< /rawhtml >}}
-
-
-This review is going to be broken up into two section: pros and cons. If you
-are a Q2 owner, you can stop at the end of the pros section so you can avoid
-any self-doubt in your purchase.
-# Pros
 
 ## Design and Feel
 {{< exif src="/img/q2/q2_showcase.jpg" >}}
@@ -39,6 +33,19 @@ Having a camera that feels good is important. It means you'll take it with you
 instead of just relying on your phone. Taking more pictures is the only way to
 improve as a photographer.
 
+## Made for the streets
+There's no doubt this camera belongs on the streets. The 28mm invites a ton of
+background and context for your subjects. The camera is much more discreet than
+a DSLR or a Mirrorless camera with a massive 28-70 stuck on the front. Cover up
+the red dot on the front with some electrical tape or a black sticker and
+you've completed the setup.
+{{< figure src="/img/q2/manwsp.jpg" >}}
+{{< figure src="/img/q2/pridegirl.jpg" >}}
+{{< figure src="/img/q2/pridewsp.jpg" >}}
+{{< figure src="/img/q2/ukraine.jpg" >}}
+{{< figure src="/img/q2/windy.jpg" >}}
+
+
 ## Image Quality
 Images out of this camera look good. The Summilux 28mm f/1.7 mounted on this
 body produces images so sharp and crispy on that 47MP sensor. If you print your
@@ -51,9 +58,15 @@ you are never going to get a bokeh filled photo outside of shooting this in
 Macro.
 {{< exif src="/img/q2/portrait_q2_1.jpg" >}}
 {{< exif src="/img/q2/portrait_q2_2.jpg" >}}
+Thanks to its wide f1.7 aperture you can get the Leica Look&#8482; or 3D pop
+you'll hear all over the internet. To me the Leica look is the clear
+distinction between your subject and the background. You can definitely get the
+same look with other brands.
+
 ## Features
 The Leica Q2 has a bunch of features that I never or seldom used. But I'll try
 to cover them in this section.
+
 ### Crop Modes (virtual lenses):
 You can select between 28mm (native), 35mm, 50mm, 75mm crop modes. In the
 viewfinder you'll see framelines like you'd find in a Leica M series
@@ -67,6 +80,9 @@ lens or sensor, but because I
 
 Capture One doesn't read the crop information like you'd see in Lightroom, so
 even if I did apply a crop, I would always see the full 28mm image anyway.
+
+{{< exif src="/img/q2/gletschergarten.jpg" >}}
+
 ### Image Stabilization
 The Q series has Image Stabilization via its lens. By default it would only be
 applied when shooting at 1/125th of a second, but you can change this behavior
@@ -117,6 +133,27 @@ shot a single video outside of a test clip when I first got the camera. Don't
 buy this camera for video, buy an SL2 if you need it to be a Leica, or from
 every other manufacturer out there.
 
+## Leaf Shutter
+In place of a focal plane shutter like in most cameras, Leica Engineers have
+blessed this camera with a leaf shutter. I'm not an engineer, so all I know
+about leaf shutters is this.
+
+- Typically cannot fire as fast as a focal plane shutter
+- Flash Sync at any speed
+- Quiet
+
+The only con is that the leaf shutter can't fire faster than 1/2000th of a
+second, but the Q2 can shoot with an electronic shutter up to 1/40000th of a
+second. Rolling shutter can be an issue with electronic shutters, but unless
+you're shooting street at 1.7 in the middle of the day, I don't see many
+situations where you're going to have an issue.
+
+A huge pro for flash users is that you can flash sync to the max speed of the
+leaf shutter, which is 1/2000th of a second, compare that to focal plane
+shutter cameras, where the max sync speed is around 1/125th of a second. In a
+studio setting, this won't usually be an issue, but on the streets you may be
+shooting at 1/500th of a second, so this can come in handy.
+
 # Cons
 Q owners you can skip this section. Just love your camera.
 
@@ -149,6 +186,9 @@ I think all this correction is the weirdness I see when I look at the images
 from this lens. I don't see it in every photo, but I can *feel* it. If this
 doesn't bother you or you don't notice it, that's great!
 
+This was all brought to my attention by [Samuel Lintaro's](https://www.lintaro.de)
+video on why he sold his Q2.
+
 # Closing Thoughts
 The Leica Q2 is a beautiful camera that can render beautiful images. It's
 unrivaled in its category, and its a camera that feels great to use and was my
@@ -180,3 +220,8 @@ want to find another 28mm that I like to use, but also have the freedom to
 switch to a 50mm or 75mm when I want to. I learned to not be afraid of cropping. 
 But it was time to move on. I hope whoever ends up with my Q2 can love it as much as I did.
 {{< figure src="/img/q2/closer.jpg" class=full-bleed >}}
+
+# Some sample pics
+{{< figure src="/img/q2/gantry.jpg" >}}
+{{< figure src="/img/q2/swissmountain.jpg" >}}
+{{< figure src="/img/q2/alleva.jpg" >}}
