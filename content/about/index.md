@@ -7,3 +7,7 @@ weight: 10
 Currently Security Engineer **@Duolingo**
 
 Formerly [**@Hinge**](https://hinge.co) and [**@MITRE**](https://mitre.org)
+
+[Instagram](https://www.instagram.com/7traindelay/)
+
+[LinkedIn Profile](https://www.linkedin.com/in/alexkellermann/)

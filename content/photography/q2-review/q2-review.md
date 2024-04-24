@@ -6,6 +6,8 @@ showtoc : true
 ShowReadingTime : true
 cover:
     image: '/img/q2/q2_header.jpg'
+summary: A Review of the Leica Q2 after 2 years of ownership. How I used it, its pros and cons, and lots of images.
+env: production
 ---
 {{< rawhtml >}}
 <style>
