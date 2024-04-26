@@ -5,7 +5,7 @@ title = 'brot.dev 🍞'
 theme = 'papermod'
 assetDir = 'static'
 enableInlineShortcodes = true
-pluralizelisttitles = "false"
+pluralizelisttitles = false
 
 
 [markup]
@@ -15,18 +15,18 @@ pluralizelisttitles = "false"
 
 [menu]
   [[menu.main]]
-    identifier = "photography"
-    name = "photography"
-    url = "/photography/"
+    identifier = "posts"
+    name = "posts"
+    url = "/posts/"
     weight = 1
   [[menu.main]]
-    identifier = "tech"
-    name = "tech"
-    url = "/tech/"
+    identifier = "gallery"
+    name = "gallery"
+    url = "/gallery/"
     weight = 2 
   [[menu.main]]
-    identifier = "contact"
-    name = "contact"
+    identifier = "about"
+    name = "about"
     url = "/about/"
     weight = 3 
 
