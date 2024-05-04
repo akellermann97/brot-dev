@@ -23,9 +23,10 @@ figure.entry-cover {
 {{< exif src="/img/iphone11/IMG_2710.jpg" >}}
 *"The best camera is the one you have with you."* -Chase Jarvis
 
-Everyone carries a phone with them, those phones come with cameras, usually sporting several focal lengths. I owned the iPhone 11 Pro from 2019—2023, and through those years I took thousands of photos. We're all taking photos with our phones now, and have largely become desensitized to their presence. Whipping out your phone to take a picture to share to social media is easy, it's fast, and it doesn't provoke the same nervousness in a subject that holding a DSLR or a Mirrorless camera does. Considering people's primary photo taking device is now a smartphone, and Apple alone shipping an estimated 234.6 million units[^1], it's important to take them seriously, understand how we can use them, and push past the mindset of it being "just a phone".
+Everyone carries a phone with them, those phones come with cameras, and those cameras as **good**. I owned the iPhone 11 Pro from 2019—2023, and through those years I took thousands of photos. We're all taking photos with our phones now, and have largely become desensitized to their presence. Whipping out your phone to take a picture to share on social media is easy, it's fast, and it doesn't provoke the same nervousness in subjects that holding a DSLR or a Mirrorless camera does. Considering people's primary camera is now a smartphone, with Apple alone shipping an estimated 234.6 million units[^1], it's important to take them seriously, understand how we can use them, and push past the mindset of it being "just a phone".
+
 ## Three Lenses, Three Sensors
-The iPhone 11 Pro came with three rear cameras. Interestingly, not every lens in this setup have the same sized sensor and not all were focusable or could even shoot RAW!
+The iPhone 11 Pro came with three rear cameras. Interestingly, not every lens in this setup have the same sized sensor, and not all were focusable or could even shoot RAW!
 
 - The Wide (26mm) 
     - The default lens, and strongest performer. Used for the majority of shots in this post. Outputs RAW.
@@ -56,11 +57,11 @@ This is a 2x of the wide lens, bringing up to around a 50mm in Full Frame terms.
 {{< exif src="/img/iphone11/IMG_3451.jpg" >}}
 This iPhone has some pretty high performing optical image stabilization. If shooting in automatic mode, if you held the camera still, and the algorithm gods had deemed it so, I would find the iPhone shooting as slow as 1/60th of a second. 
 
-Shooting at 1/60th of a second produced images that were still sharp, and if you went into a third-party app like Halide and selected full-manual, you could get images that were sharp down to 1/15th of a second. Unfortunately in automatic mode the camera never got this low, which is a shame, since lower shutter speeds keep that ISO low and high ISO is where the camera starts to really fall apart.
+Shooting at 1/60th of a second produced images that were still sharp, and if you went into a third-party app like Halide and selected full-manual, you could get images that were sharp down to 1/15th of a second. Unfortunately in automatic mode the camera never got this low, which is a shame, since lower shutter speeds keep that ISO low and high ISO is where the image quality starts to suffer.
 
 
 ## The RAWs
-The RAWs out of this camera are finnicky. Under good lighting, they can be quite easy to work with. In Capture One, they're pretty easy to correct the basic flaws. Limited Dynamic range means you'll need to bring down the highlights and up the shadows to get something looking more 'normal' as a base, and there's quite a bit of vignetting in the corners that needs to be corrected.
+The RAWs out of this camera are finicky. Under good lighting, they can be quite easy to work with. In Capture One, they're pretty easy to correct the basic flaws. Limited Dynamic range means you'll need to bring down the highlights and up the shadows to get something looking more 'normal' as a base, and there's quite a bit of vignetting in the corners that needs to be corrected.
 
 ### RAW vs Processed RAW vs HEIC
 {{< figure src="/img/iphone11/no_adjustments.jpg" caption="Raw imported into Capture One and exported with no adjustments" >}}
@@ -79,16 +80,16 @@ With good lighting, you can get really punchy images with good color and very li
 {{< exif src="/img/iphone11/IMG_2516.jpg" >}}
 {{< exif src="/img/iphone11/IMG_2593.jpg" >}}
 
-I love the colors and details in these images. Colors are vivid without coming across as oversaturated, and there's enough light so the phone doesn't have to do aggressive noise reduction to smooth images out. Deep fusion[^2] does a good job of keeping the details on the jacket nice and sharp and well separated without giving *too* many oversharpening artifacts on other areas of the image. Relatively flat lighting on this overcast day means that the HDR didn't have to work too hard to balance the exposure, pretty much a dream scenario for showing off this generations HDR capabilities.
+I love the colors and details in these images. Colors are vivid without coming across as oversaturated, and there's enough light so the phone doesn't have to do aggressive noise reduction to smooth images out. Deep fusion[^2] does a good job of keeping the details on the jacket nice and sharp and well separated without giving *too* many oversharpening artifacts on other areas of the image. Relatively flat lighting on this overcast day means that the HDR didn't have to work too hard to balance the exposure, pretty much a dream scenario for showing off this generation's HDR capabilities.
 
 {{< exif src="/img/iphone11/IMG_1831.jpg" >}}
-In challenging lighting conditions, Apple tries to do everything, preserve highlights and raise shadows, resulting in scenes that look a bit too HDR-ish, leading to lighting that feels flat.. The tones feel off in this photo, it was quite dark inside with bright sunlight beaming through this AirBNB. I do feel like most people would like this photo, as the subject is well lit, but it doesn't feel true to the scene.
+In challenging lighting conditions, Apple tries to do everything, preserve highlights and raise shadows, resulting in scenes that look a bit too HDR-ish, leading to lighting that feels flat.. The tones feel off in this photo, it was quite dark inside with bright sunlight beaming through this AirBNB. I do feel like most people would like this photo, as the subject is well-lit, but it doesn't feel true to the scene.
 
 {{< exif src="/img/iphone11/IMG_1110.jpg" >}}
-In really dark situations like seen here @ Radio City Music Hall, the Phone really makes the scene quite bright, and adds lots of processing. Zoom in to see the massive amounts of noise reduction applied to the musicians in their seats!
+In really dark situations like seen here @ Radio City Music Hall, the Phone really makes the scene overly bright and adds lots of noise removal. Zoom in to see the massive amounts of noise reduction applied to the musicians in their seats!
 
 #### Verdict:
-Overall I'd give the SOOC shots a 8/10. Very usable, even when they're not all to my taste.
+Overall I'd give the SOOC shots an 8/10. Very usable, even when they're not all to my taste.
 
 ## Taking Pictures
 There were two ways I took photos on this phone:
@@ -102,16 +103,16 @@ Will likely cover Halide in another post, but the short of it is:
 - Inconsistent Quality Throughout The Years
 - Pricey
 
-I'd give the app itself a 8.1/10, some really unique features (e.g. AI upscaling, instant RAW edits, waveforms), I think the design is one of the best out there, and the experience is quite delightful. But unless you're serious about taking photos on a phone, I wouldn't recommend it because of its subscription model. 
+I'd give the app itself an 8.1/10, some really unique features (e.g. AI upscaling, instant RAW edits, waveforms), I think the design is one of the best out there, and the experience is quite delightful. But unless you're serious about taking photos on a phone, I wouldn't recommend it because of its subscription model. 
 
 On newer iPhones (such as the iPhone 15 Pro), you can shoot proRAW straight from the native camera app. You could only do this from the iPhone 12 series onward, and you can't shoot regular RAW from this app, so you'll need to download a third-party app to cover that.
 
 ## Closing Thoughts
-Cameras on Phones have officially gotten good. They've been good since around the iPhone 6S, and have only improved year after year. Whatever phone you have, iPhone or Android, don't let the fact that you kept your other camera at home stop you from taking that shot. I haven't owned a Pixel but I've seen what they're capable of, Samsung phones too. They're all really good. Some really interesting stuff has come out with Xiaomi and OnePlus, who are partnering with Leica and Hasselblad respectively. Hopefully one day in the future I get around to playing around with those phones so I can test out their capabilities first hand.
+Cameras on Phones have officially gotten good. They've been good since around the iPhone 6S, and have only improved year after year. Whatever phone you have, iPhone or Android, don't let the fact that you kept your other camera at home stop you from taking that shot. I haven't owned a Pixel but I've seen what they're capable of, Samsung phones too. They're all really good. Some really interesting stuff has come out with Xiaomi and OnePlus, who are partnering with Leica and Hasselblad respectively. Hopefully one day in the future I get around to playing around with those phones so I can test out their capabilities firsthand.
 
-Embrace the all-auto life with your phone, let the camera do the thinking for you and trust in the algorithms. Or switch to Raw and edit them later. It's important to study and understand the characteristics of your phone and its cameras to best use them. Experiment and see how you like the results of SOOC vs RAW in different conditions. Just as an example, in low light with this phone, I would shoot nightmode vs RAW since high ISO performance means I'll be happier with a final result with shooting in nightmode.
+Embrace the all-auto life with your phone, let the camera do the thinking for you, and trust in the algorithms. Or switch to Raw and edit them later. It's important to study and understand the characteristics of your phone and its cameras to best use them. Experiment and see how you like the results of SOOC vs RAW in different conditions. Just as an example, in low light with this phone, I would shoot night mode vs RAW since high ISO performance means I'll be happier with a final result with shooting in night mode.
 
 Grow comfortable shooting with your phone, especially if it keeps you in a scene, or if a moment if fleeting.
 
 [^1]: https://www.nasdaq.com/articles/bite-of-the-big-apple:-iphone-secures-top-spot-in-2023-global-smartphone-shipments-beats
-[^2]: Deep Fusion is one of Apple's marketing terms for an algorithm that looks to preserve details in areas of high-contrast, like sweaters. See: https://www.rittmuller.com/blog/2019/10/15/going-deep-fusion
+[^2]: Deep Fusion is one of Apple's marketing terms for an algorithm that looks to preserve details in areas of high contrast, like sweaters. See: https://www.rittmuller.com/blog/2019/10/15/going-deep-fusion
