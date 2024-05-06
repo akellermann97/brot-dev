@@ -85,6 +85,7 @@ This is the only custom piece in the site. I use two shortcodes to get some extr
     - GitHub Actions builds html pages from hugo.toml from the `main` branch
 
 {{< figure src="/img/brot-dev/actions.png" caption="Just 5 workflows runs so far" >}}
+
 That's it! 🎉🎂
 
 ## tl;dr - The Stack
