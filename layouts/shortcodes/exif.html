@@ -7,14 +7,7 @@
 
 {{ with $image.Exif }}
  <figcaption>
-<p>
-  {{ $alt }}
-  {{ with .Tags.ExposureTime }}{{ . }}{{ end }}   
-  {{ with .Tags.FNumber }} <i>@f</i>{{ . }}{{ end }}   
-  {{ with .Tags.ExposureTime }}{{ end }}   
-  {{ with .Tags.ISOSpeedRatings }}ISO {{ . }}{{ end }}
-  {{ with .Tags.FocalLength }}{{ . }}mm{{ end }}   
-  </p>
+<p>{{ $alt }}{{ with .Tags.ExposureTime }}{{ . }}{{ end }}{{ with .Tags.FNumber }}&emsp;<i>@f/</i>{{ . }}{{ end }}{{ with .Tags.ExposureTime }}{{ end }}{{ with .Tags.ISOSpeedRatings }} ISO {{ . }}&emsp; {{ end }}{{ with .Tags.FocalLength }}{{ . }}mm{{ end }}</p>
  </figcaption>
 
 {{ end }}
