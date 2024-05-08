@@ -2,6 +2,7 @@
 title: 'About Me'
 weight: 10
 env: production
+layout: about
 ---
 
 Hey! I'm Alex Kellermann, a Security Engineer passionate about Kubernetes, Cloud Security, Sumo Wrestling, and Photography based in New York City.

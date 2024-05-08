@@ -45,7 +45,7 @@ So, now you know you want to build a static site, and you're going to use Hugo. 
 
 *If* I wanted to run my own nginx server, I would probably use [Hetzner](https://hetzner.com) to buy a VPS since you can get good compute capacity for ~30 bucks a month, assuming you get low traffic. Would then look to have Cloudflare serve as my CDN and WAF and rely on their free tier. All in all you could get this running for around 30 bucks a month if you just wanted to run a static site, and this gives you a lot of room to grow. If you want to host dynamic content this would be a really good option, and you could buy a better tier of VPS and run multiple things on it, use it as an Exit Node in a Tailnet, etc. This option has the most upfront investment, both timewise and money wise.
 
-{{< figure src="/img/brot-dev/hetzner.png" caption="~5 Euros a Month for 20TB of traffic!">}}
+{{< figure src="/img/brot-dev/hetzner.png" caption="~5 Euros a Month for 20TB of traffic!" class="normal" >}}
 
 Many big name companies actually host their own websites using s3 static sites! You get a good balance of security, ease of use, and flexibility with that. But bucket-based hosting does require a lot of setup. You'll need to make sure your bucket permissions are correct, give AWS/GCP/Azure a credit card, set up things like TLS certificates, get a CDN up and running so you get better performance and maybe save a bit of \$\$\$. This is a lot of upfront work, but once it's all setup it's fairly effortless to keep running. Cloud providers handle a lot of the headache for you in terms of rotating certs and running a CDN (at least with AWS) and a static website is fairly one-click. If I were a business I would go for this route unless I had the willingness to staff an inhouse team to manage nginx directly.
 
@@ -54,7 +54,7 @@ Lastly, we have GitHub pages. To me this was always going to be my first choice,
 ## GitHub Pages Setup
 [GitHub Pages](https://pages.github.com) is a great service provided by GitHub themselves. Don't pay any mind to the fact that the landing page hasn't been updated since the iPhone 6 came out, all that matters is that it's still supported and FREE! Yes, it relies on the fact that your respository is public, but since you want your website to be on the internet anyway, doesn't seem like a big tradeoff. If you were really secretive about the stack you were using to build your website, you could have a private repo host the actual Bread and Butter and use GitHub actions to push the final published pages to the public repo.
 
-{{< figure src="/img/brot-dev/pages.png" caption="This websites actual repo! For now..." >}}
+{{< figure src="/img/brot-dev/pages.png" caption="This websites actual repo! For now..." class="normal" >}}
 
 With GitHub pages you also get the ability to use GitHub actions, build from branches other than main/master, and you don't have to think about Bandwidth costs, CDN setup, or a CI/CD pipeline. If you're using a Hugo project like me, you can really just follow the Hugo Quickstart guide and put that in a Git Repo and push that and it'll be your new website. If you're using GitHub actions I would add `public` to your .gitignore since the vanilla GitHub action will build your website on deploy.
 
@@ -84,7 +84,7 @@ This is the only custom piece in the site. I use two shortcodes to get some extr
     - PaperTheme is included as a git submodule
     - GitHub Actions builds html pages from hugo.toml from the `main` branch
 
-{{< figure src="/img/brot-dev/actions.png" caption="Just 5 workflows runs so far" >}}
+{{< figure src="/img/brot-dev/actions.png" caption="Just 5 workflows runs so far" class="normal" >}}
 
 That's it! 🎉🎂
 
@@ -94,7 +94,7 @@ That's it! 🎉🎂
 - GitHub Pages hosts the website, acts as a CDN and as DDOS protection (TY Microsoft 💕)
 - GitHub Actions reads the Hugo toml and the markdown and compiles the pages itself (this is overkill, but free)
 
-{{< figure src="/img/brot-dev/wip.png" caption="The glamorous static website lifestyle" >}}
+{{< figure src="/img/brot-dev/wip.png" caption="The glamorous static website lifestyle" class="normal" >}}
 
 ## Errors? Typos?
 Open up a GitHub PR and hopefully I'll get around to reviewing it. Or email at alex (at) brot (dot) dev
