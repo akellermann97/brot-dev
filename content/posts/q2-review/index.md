@@ -29,7 +29,7 @@ There's no doubt this camera belongs on the streets. The 28mm invites a ton of b
 ## Image Quality
 Images out of this camera look good. The Summilux 28mm f/1.7 mounted on this body produces images so sharp and crispy on that 47MP sensor. If you print your images you'll love this combo. The rendering looks great. You can good subject separation from the background, colors are punchy (in RAW at least), and the lens offers plenty of contrast. Bokeh is a mixed bag. In some pictures it can be buttery and without distractions, other times it's busy and jaggedy. Overall I'd rate it a 7.2/10. However, it's important to remember that this is a 28mm, you are never going to get a bokeh filled photo outside of shooting this in Macro.
 
-{{< exhibit class="2cl-2rw">}}
+{{< exhibit class="2cl-2rw mw-80">}}
 {{< figure src="/img/q2/L1000312.jpg" class="one" >}}
 {{< figure src="/img/q2/portrait_q2_2.jpg" class="two" >}}
 {{< figure src="/img/q2/L1002380.jpg" class="three" >}}
