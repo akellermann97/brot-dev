@@ -1,10 +1,10 @@
 ---
 title: 'Guide: Shooting Disposables'
 date: 2025-01-01
-draft: true
+draft: false
 showtoc: true
 ShowReadingTime: true
-summary: Looking at Disposable Cameras and a review of select locations in New York City to get Film Developed.
+summary: A Guide looking at disposable cameras and a review of select locations in New York City to get film Developed.
 tags: [Fujifilm, Kodak, 35mm, Film, Disposable, Photography, Review]
 cover:
     image: '/img/disposable/L1002022.jpg'
@@ -12,9 +12,9 @@ cover:
 
 Go out to a party and you're almost guaranteed to find someone drunkingly snapping photos with a disposable camera. If you needed a guide on which camera to pick up, some tips on using them, or where to get your pictures developed (NYC only), this guide is for you.
 
-**[tl;dr]** - You should pick up the FujiFilm Quicksnap. Stand ~6ft away from your subject, and unless you're in bright sunlight (overcast is not enough), shoot with flash.
+**[tl;dr]** - You should pick up the FujiFilm QuickSnap. Stand ~6ft away from your subject, and unless you're in bright sunlight (overcast is not enough), shoot with flash.
 
-The FujiFilm Quicksnap (The Green camera in the header) will be the focus for the majority of the article. The shooting experience will be largely the same across the two brands. The Kodak uses an 800 speed film whereas Fuji uses a 400 speed film, but in practice, the differences are not noticeable. There are differences in color rendition, but they both give you that highly sought after "Film Look"
+The FujiFilm QuickSnap (The Green camera in the header) will be the focus for the majority of the article. The shooting experience will be largely the same across the two brands. The Kodak uses an 800 speed film whereas Fuji uses a 400 speed film, but in practice, the differences are not noticeable. There are differences in color rendition, but they both give you that highly sought after "Film Look"
 
 Price of Fujifilm QuickSnap in USD (July 2024)
 - B&H PhotoVideo: 
@@ -37,7 +37,7 @@ There's something special about the rendering of a disposable camera. The shots 
 
 ## FujiFilm QuickSnap Specs
 
-Information pulled from the Fujifilm datasheet for the Quicksnap[^1]
+Information pulled from the Fujifilm datasheet for the QuickSnap[^1]
 |                    |                     |
 | ------------------ | ------------------- |
 | **Focal Length:**  | 32mm                |
