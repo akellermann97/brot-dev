@@ -4,30 +4,30 @@ date: 2025-01-01
 draft: false
 showtoc: true
 ShowReadingTime: true
-summary: A Guide looking at disposable cameras and a review of select locations in New York City to get film Developed.
+summary: Taking a look at disposable cameras, which to buy, how to get the most out of them, and a selection of spots in NYC to get them developed.
 tags: [Fujifilm, Kodak, 35mm, Film, Disposable, Photography, Review]
 cover:
     image: '/img/disposable/L1002022.jpg'
 ---
 
-Go out to a party and you're almost guaranteed to find someone drunkingly snapping photos with a disposable camera. If you needed a guide on which camera to pick up, some tips on using them, or where to get your pictures developed (NYC only), this guide is for you.
+Go out to a party and you're almost guaranteed to find someone drunkenly snapping photos with a disposable camera. If you needed a guide on which camera to pick up, some tips on using them, or where to get your pictures developed (in NYC), this guide is for you.
 
-**[tl;dr]** - You should pick up the FujiFilm QuickSnap. Stand ~6ft away from your subject, and unless you're in bright sunlight (overcast is not enough), shoot with flash.
+**[tl;dr]** You should pick up the FujiFilm QuickSnap. Stand ~6ft away from your subject, and unless you're in bright sunlight (overcast is not bright enough), shoot with flash.
 
-The FujiFilm QuickSnap (The Green camera in the header) will be the focus for the majority of the article. The shooting experience will be largely the same across the two brands. The Kodak uses an 800 speed film whereas Fuji uses a 400 speed film, but in practice, the differences are not noticeable. There are differences in color rendition, but they both give you that highly sought after "Film Look"
+The FujiFilm QuickSnap (The green camera in the header) will be the focus for the majority of the article. The shooting experience will be largely the same across Kodak and FujiFilm models. The Kodak PowerFlash uses an 800 speed film whereas Fuji uses a 400 speed film, but in practice, the differences are not noticeable. There are differences in color rendition, but they both give you that highly sought after "Film Look"
 
 Price of Fujifilm QuickSnap in USD (July 2024)
 - B&H PhotoVideo: 
-  - $14.29 for a single
-  - $25.99 for a double pack.
+  - $14.29 for a single camera
+  - $25.99 for a double pack
 - CVS: 
   - $37.99 for a double pack!
 - Random Bushwick Vending Machine:
-  - $20.00 for one. (I've been told)
+  - $20.00 for one (I've been told)
 
 # Why shoot a disposable?
 
-Bringing a nice camera everywhere is the dream. But hauling around a heavy camera is not always an option. Phones are a good alternative, but their rendering of low-light scenes without flash have ugly results. Use the phone flash, and it takes a couple seconds to grab focus. People's eyes squint because of the light, expressions shift, and you just lose the moment. No flash and it could be several seconds before the phone takes the shot, or the picture it takes is blotchy from the phone's aggressive noise removal. Using night more requires your subject to stay still, otherwise you lose the shot.
+Hauling around a heavy mirrorless/DSLR camera is not always an option. Some venues don't allow it, or you're planning on getting sloppy drunk and don't trust yourself to babysit your Leica all night. Phones are a good alternative, but their rendering of low-light scenes without flash have ugly results. Use the phone flash, and it takes a couple seconds to grab focus. People's eyes squint because of the light, expressions shift, and you just lose the moment. No flash and it could be several seconds before the phone takes the shot, or the picture it takes is blotchy from the phone's aggressive noise removal. Using night more requires your subject to stay still, otherwise you lose the shot.
 
 {{< figure src="/img/disposable/16530012.jpg" class="normal" >}}
 
@@ -84,6 +84,31 @@ The Kodak H35 is a half-frame camera, which means you'll get 48 or 72 shots in a
  There was also an issue I had where the frame counter showed 3 or 4 while the camera actually had run out of film already. I suspect that's why the last frame in the camera—pictured below—seems to have a light leak in it. I recommend going with the Fuijfilm. But don't buy the waterproof version. That version is missing a flash—So you can't shoot at night—and has even more plastic in front of the lens, so you get worse image quality.
 
 {{< figure src="/img/disposable/00680001.jpg" class="normal" caption="Light Leak in last frame of the Kodak Funsaver" >}}
+
+## How to shoot with a disposable
+
+- Turn your flash on
+- Make sure your finger isn't in front of the lens
+- Keep the camera relatively still
+- Keep your subject within 4-8ft of the camera
+
+Disposables have **no** range in dark lighting conditions. Anything that's more than 10ft away is going to be lost to the darkness of night if you're shooting in low light, even with flash.
+
+Make sure your finger isn't blocking the lens. Especially if someone else is taking the photo, keep an eye out for that.
+
+The box states 6ft to infinity is in focus, but I found a bit closer than that works too. Selfies can work too sometimes, but they will be slightly blurry. Getting further away than that and you'll find the flash power drops off very quickly.
+
+{{< figure src="/img/disposable/78240006.jpg" class="normal" caption="Subject beautifully lit, but the background disappears into complete darkness" >}}
+
+### Flash on as default
+
+Shoot the camera with the flash on. On cloudy days, you might be surprised to find that your shots will come out underexposed if you rely on natural light. The aperture on disposable cameras is too small to let in enough light. If you're ever unsure, you should shoot with the flash on. Film has a much greater latitude in preserving highlights than in recovering shadows.
+
+{{< figure src="/img/disposable/00680014.jpg" class="normal" caption="Shot in overcast conditions, note the grain from having the film scan pushed by the lab. Colors are muted and shadows lifted." >}}
+
+Disposables can be shot in bright full sun and you'll get some great results. I don't see many people reaching for a disposable camera during the day, but the results are good. The focus distance doesn't change, so you'll still want to be ~6ft away from your subject to have good sharpness in your shot. In the summer and clear skies, you can shoot without flash. Again, when in doubt, use flash.
+
+{{< figure src="/img/disposable/07570027.jpg" class="normal" >}}
 
 # Film Dev/Scan Shops in NYC
 
