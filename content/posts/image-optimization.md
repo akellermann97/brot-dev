@@ -6,6 +6,7 @@ showreadingtime: true
 showtoc: true
 cover:
     image: '/img/image-optimization/L1004788.jpg'
+author: Alex Kellermann
 summary: "Using AVIF and JXL to improve page loading times while delivering large, high-quality images. And looking at MozJPEG for even better JPEG performance"
 tags: [images, formats, tech, blog, jpeg, webp, avif, mozjpeg, heic, jpegxl]
 ---

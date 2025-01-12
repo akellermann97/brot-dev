@@ -9,6 +9,12 @@ pluralizelisttitles = false
 
 [params]
 assets.disableScrollBarStyle = true
+hidesummary = true
+env = "production" 
+description = "brot.dev — by Alex Kellermann"
+author = "Alex Kellermann"
+defaultTheme = "auto"
+images = ["brotheader.png"]
 
 
 [markup]

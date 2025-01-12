@@ -4,6 +4,7 @@ date: 2025-01-01
 draft: false
 showtoc: true
 ShowReadingTime: true
+author: Alex Kellermann
 summary: Taking a look at disposable cameras, which to buy, how to get the most out of them, and a selection of spots in NYC to get them developed.
 tags: [Fujifilm, Kodak, 35mm, Film, Disposable, Photography, Review]
 cover:
@@ -17,6 +18,7 @@ Go out to a party and you're almost guaranteed to find someone drunkenly snappin
 The FujiFilm QuickSnap (The green camera in the header) will be the focus for the majority of the article. The shooting experience will be largely the same across Kodak and FujiFilm models. The Kodak PowerFlash uses an 800 speed film whereas Fuji uses a 400 speed film, but in practice, the differences are not noticeable. There are differences in color rendition, but they both give you that highly sought after "Film Look"
 
 Price of Fujifilm QuickSnap in USD (July 2024)
+
 - B&H PhotoVideo: 
   - $14.29 for a single camera
   - $25.99 for a double pack

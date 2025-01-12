@@ -7,7 +7,7 @@ layout: about
 
 <br>
 
-Hey! I'm Alex Kellermann, a Security Engineer passionate about Kubernetes, Cloud Security, Sumo Wrestling, and Photography based in New York City.
+Hey! I'm Alex Kellermann, a Security Engineer based in New York City. This website's a bit of a melting pot of all the things I like to talk about.
 
 
 ## Role History: *2019-present*
@@ -20,6 +20,9 @@ Hey! I'm Alex Kellermann, a Security Engineer passionate about Kubernetes, Cloud
 
 ## Socials:
 
+I can be found on some other places too!
+
 - [Instagram](https://www.instagram.com/7traindelay/)
 - [LinkedIn](https://www.linkedin.com/in/alexkellermann/)
+- [GitHub](https://github.com/akellermann97)
 

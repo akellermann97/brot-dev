@@ -4,11 +4,12 @@ draft: false
 showtoc: true
 date: 2024-05-03
 showReadingTime: true
-env: production
-summary: Why you don't need a Digicam
 cover:
     image: '/img/iphone11/IMG_3752.jpg'
+author: Alex Kellermann
+summary: Why you don't need a Digicam
 tags: [Apple, iPhone, iPhone 11 Pro, Halide, Review, Photography, Mobile, iOS]
+env: production
 ---
 
 {{< figure src="/img/iphone11/IMG_2710.jpg" class="normal">}}

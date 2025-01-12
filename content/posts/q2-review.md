@@ -6,9 +6,9 @@ showtoc: true
 ShowReadingTime: true
 cover:
     image: '/img/q2/L1001473.jpg'
+author: Alex Kellermann
 summary: A Review of the Leica Q2 after 2 years of ownership. How I used it, its pros and cons, and lots of images.
 tags: [Leica, Q2, 28mm, Photography, Review]
-env: production
 ---
 
 ## Design and Feel
