@@ -6,6 +6,7 @@ theme = 'brot'
 assetDir = 'static'
 enableInlineShortcodes = true
 pluralizelisttitles = false
+enableRobotsTXT = true
 
 [params]
 assets.disableScrollBarStyle = true
