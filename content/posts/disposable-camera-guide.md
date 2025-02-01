@@ -6,9 +6,10 @@ showtoc: true
 ShowReadingTime: true
 author: Alex Kellermann
 summary: Taking a look at disposable cameras, which to buy, how to get the most out of them, and a selection of spots in NYC to get them developed.
-tags: [Fujifilm, Kodak, 35mm, Film, Disposable, Photography, Review]
+tags: [Fujifilm, Kodak, Film, Disposable, Photography, Review]
 cover:
     image: '/img/disposable/L1002022.jpg'
+    alt: 'A top down view of two disposable cameras laying on a cutting mat.'
 ---
 
 Go out to a party and you're almost guaranteed to find someone drunkenly snapping photos with a disposable camera. If you needed a guide on which camera to pick up, some tips on using them, or where to get your pictures developed (in NYC), this guide is for you.

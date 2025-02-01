@@ -1,7 +1,6 @@
 ---
 title: 'About Me'
 weight: 10
-env: production
 layout: about
 ---
 
