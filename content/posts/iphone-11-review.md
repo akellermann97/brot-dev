@@ -9,7 +9,6 @@ cover:
 author: Alex Kellermann
 summary: Why you don't need a Digicam
 tags: [Apple, iPhone, iPhone 11 Pro, Halide, Review, Photography, Mobile, iOS]
-env: production
 ---
 
 {{< figure src="/img/iphone11/IMG_2710.jpg" class="normal">}}
