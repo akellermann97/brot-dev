@@ -8,7 +8,7 @@ author: Alex Kellermann
 summary: Taking a look at disposable cameras, which to buy, how to get the most out of them, and a selection of spots in NYC to get them developed.
 tags: [Fujifilm, Kodak, Film, Disposable, Photography, Review]
 cover:
-    image: '/img/disposable/L1002022.jpg'
+    image: '/img/disposable/header.jpg'
     alt: 'A top down view of two disposable cameras laying on a cutting mat.'
 ---
 
