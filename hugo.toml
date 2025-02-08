@@ -8,6 +8,9 @@ enableInlineShortcodes = true
 pluralizelisttitles = false
 enableRobotsTXT = true
 
+[pagination]
+  pagerSize = 15
+
 [params]
 assets.disableScrollBarStyle = true
 hidesummary = true
@@ -16,6 +19,7 @@ description = "brot.dev — by Alex Kellermann"
 author = "Alex Kellermann"
 defaultTheme = "auto"
 images = ["brotheader.png"]
+hideAuthor = true
 
 
 [markup]
