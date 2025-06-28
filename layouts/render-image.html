@@ -1,0 +1,26 @@
+{{- $image := resources.Get .Destination -}}
+
+<picture>
+    {{ $isJPG := eq (path.Ext .Destination) ".jpg" }}
+    {{ $isPNG := eq (path.Ext .Destination) ".png" }}
+
+    {{ if ($isJPG) -}}
+      {{ $webp:= resources.Get (replace .Destination ".jpg" ".webp") }}
+        <source srcset="{{ $webp.Permalink | safeURL }}" type="image/webp" >
+    {{- end }}
+
+    {{ if ($isPNG) -}}
+      {{ $webp:= resources.Get (replace .Destination ".png" ".webp") }}
+        <source srcset="{{ $webp.Permalink | safeURL }}" type="image/webp" >
+    {{- end }}
+
+    <img
+      src="{{ $image.Permalink | safeURL }}"
+      sizes="100vw"
+      alt="This is the alt {{ .Title }}" title="{{ .Title }}"
+      loading="lazy"
+      decoding="async"
+      width="{{ $image.Width }}"
+      height="{{ $image.Height }}"
+    />
+  </picture>

@@ -26,6 +26,18 @@ hideAuthor = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+    [markup.goldmark.extensions]
+      strikethrough = false
+    [markup.goldmark.extensions.extras]
+      [markup.goldmark.extensions.extras.delete]
+          enable = true
+      [markup.goldmark.extensions.extras.subscript]
+          enable = true
+    [markup.goldmark.extensions.passthrough]
+        enable = true
+    [markup.goldmark.extensions.passthrough.delimiters]
+        block = [['\[', '\]'], ['$$', '$$']]
+        inline = [['\(', '\)']]
 
 [menu]
   [[menu.main]]

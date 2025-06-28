@@ -32,7 +32,7 @@ Price of Fujifilm QuickSnap in USD (July 2024)
 
 Hauling around a heavy mirrorless/DSLR camera is not always an option. Some venues don't allow it, or you're planning on getting sloppy drunk and don't trust yourself to babysit your Leica all night. Phones are a good alternative, but their rendering of low-light scenes without flash have ugly results. Use the phone flash, and it takes a couple seconds to grab focus. People's eyes squint because of the light, expressions shift, and you just lose the moment. No flash and it could be several seconds before the phone takes the shot, or the picture it takes is blotchy from the phone's aggressive noise removal. Using night more requires your subject to stay still, otherwise you lose the shot.
 
-{{< figure src="/img/disposable/16530012.jpg" class="normal" >}}
+{{< figure src="/img/disposable/16530012.jpg" class="normal" alt="Person taking a photo with a disposable camera at night, flash illuminating the scene" >}}
 
 That's what makes disposable cameras so great. They're relatively cheap, come with flashes, and take a quick photo. People have fun using disposable cameras, they create a different relationship with your subject. It comes across as more relaxed, fun. And you can just hand someone the camera for a quick shot.
 
@@ -111,7 +111,7 @@ Shoot the camera with the flash on. On cloudy days, you might be surprised to fi
 
 Disposables can be shot in bright full sun and you'll get some great results. I don't see many people reaching for a disposable camera during the day, but the results are good. The focus distance doesn't change, so you'll still want to be ~6ft away from your subject to have good sharpness in your shot. In the summer and clear skies, you can shoot without flash. Again, when in doubt, use flash.
 
-{{< figure src="/img/disposable/07570027.jpg" class="normal" >}}
+{{< figure src="/img/disposable/07570027.jpg" class="normal" alt="Bright daylight outdoor shot taken with disposable camera showing good exposure and colors" >}}
 
 # Film Dev/Scan Shops in NYC
 
@@ -134,8 +134,8 @@ I don't like the scans I got back from Eliz Digital. I only went there once to g
 
 ### Example Shots:
 
-{{< figure src="/img/disposable/000411330003.jpg" class="normal" >}}
-{{< figure src="/img/disposable/000411330013.jpg" class="normal" >}}
+{{< figure src="/img/disposable/000411330003.jpg" class="normal" alt="Example scan from Eliz Digital showing lower quality processing with visible grain and color issues" >}}
+{{< figure src="/img/disposable/000411330013.jpg" class="normal" alt="Second example from Eliz Digital scan demonstrating the shop's scan quality and color rendition" >}}
 
 ## Luster Photo
 *121 Avenue A, New York, NY 10009*</br>
@@ -157,9 +157,9 @@ Looking at their website, there's an option called "35mm Digital Slide" output, 
 **Total: $20**
 
 ### Example Shots:
-{{< figure src="/img/disposable/000010780013.jpg" class="normal" >}}
-{{< figure src="/img/disposable/07570018.jpg" class="normal" >}}
-{{< figure src="/img/disposable/78240014 1.jpg" class="normal" >}}
+{{< figure src="/img/disposable/000010780013.jpg" class="normal" alt="High-quality scan example from Luster Photo showing sharp details and good color reproduction" >}}
+{{< figure src="/img/disposable/07570018.jpg" class="normal" alt="Luster Photo scan example demonstrating their scanning quality and color grading" >}}
+{{< figure src="/img/disposable/78240014 1.jpg" class="normal" alt="Third example from Luster Photo showing flash photography results with good subject exposure" >}}
 
 ## NYC Film Lab
 *321 Starr Street, Suite E, Brooklyn, NY 11237*</br>
@@ -184,8 +184,8 @@ NYC Film lab has more options which include additional services like sleeving as
 [**Update**]: Just received an email on December 20th that NYC Film Lab is going to open a second location near Domino Park in Williamsburg. Being that close to Manhattan and transportation would make this a much more convenient option for shooters who aren't already in Bushwick. 
 
 ### Example Shots:
-{{< figure src="/img/disposable/240618000293010026.jpg" class="normal" >}}
-{{< figure src="/img/disposable/240618000293010010.jpg" class="normal" >}}
+{{< figure src="/img/disposable/240618000293010026.jpg" class="normal" alt="NYC Film Lab scan example showing their color grading style and scan quality" >}}
+{{< figure src="/img/disposable/240618000293010010.jpg" class="normal" alt="Second NYC Film Lab example demonstrating disposable camera results processed at their lab" >}}
 
 
 ## Other Labs Around the City
