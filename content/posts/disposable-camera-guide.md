@@ -1,5 +1,5 @@
 ---
-title: 'Guide: Shooting Disposables'
+title: 'Guide to Shooting Disposable Cameras: Brands, Techniques, and NYC Labs'
 date: 2025-01-01
 draft: false
 showtoc: true
