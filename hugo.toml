@@ -1,7 +1,7 @@
 baseURL = 'https://brot.dev/'
 author = "Alex Kellermann"
 languageCode = 'en-us'
-title = 'brot.dev 🍞'
+title = 'BROT.DEV 🍞'
 theme = 'brot'
 assetDir = 'static'
 enableInlineShortcodes = true
@@ -15,7 +15,7 @@ enableRobotsTXT = true
 assets.disableScrollBarStyle = true
 hidesummary = true
 env = "production" 
-description = "brot.dev — by Alex Kellermann"
+description = "Alex Kellermann's personal site featuring photography gear reviews, cybersecurity insights, and technical tutorials. Explore camera guides, security articles, and more."
 author = "Alex Kellermann"
 defaultTheme = "auto"
 images = ["brotheader.png"]
