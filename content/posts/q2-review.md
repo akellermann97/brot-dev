@@ -20,7 +20,7 @@ Having a camera that feels good is important. It means you'll take it with you i
 
 ## Made for the streets
 There's no doubt this camera belongs on the streets. The 28mm invites a ton of background and context for your subjects. The camera is much more discreet than a DSLR or a Mirrorless camera with a massive 28-70 stuck on the front. Cover up the red dot on the front with some electrical tape or a black sticker and you've completed the setup.
-{{< exhibit class="2cl" >}}
+{{< exhibit class="two-cl" >}}
 {{< figure src="/img/q2/manwsp.jpg" >}}
 {{< figure src="/img/q2/pridegirl.jpg" >}}
 {{< /exhibit >}}
@@ -29,7 +29,7 @@ There's no doubt this camera belongs on the streets. The 28mm invites a ton of b
 ## Image Quality
 Images out of this camera look good. The Summilux 28mm f/1.7 mounted on this body produces images so sharp and crispy on that 47MP sensor. If you print your images you'll love this combo. The rendering looks great. You can good subject separation from the background, colors are punchy (in RAW at least), and the lens offers plenty of contrast. Bokeh is a mixed bag. In some pictures it can be buttery and without distractions, other times it's busy and jaggedy. Overall I'd rate it a 7.2/10. However, it's important to remember that this is a 28mm, you are never going to get a bokeh filled photo outside of shooting this in Macro.
 
-{{< exhibit class="2cl-2rw mw-80">}}
+{{< exhibit class="two-cl-2rw mw-80">}}
 {{< figure src="/img/q2/L1000312.jpg" class="one" >}}
 {{< figure src="/img/q2/portrait_q2_2.jpg" class="two" >}}
 {{< figure src="/img/q2/L1002380.jpg" class="three" >}}
@@ -103,7 +103,7 @@ like a true 28mm lens. Read on forums and you'll hear about how this is a 24mm
 cropped to a 28mm. I think that, mixed with the fact the lens has a good amount
 of distortion that's corrected by photo editing software rather than optically.
 
-{{< exhibit class="2cl" >}}
+{{< exhibit class="two-cl" >}}
 {{< figure src="/img/q2/q2_corrected.jpg" caption="The Q2 Image edited only for exposure" >}}
 {{< figure src="/img/q2/q2_uncorrected.jpg" caption="The Q2 Image with all default corrections and crop turned off" >}}
 {{< /exhibit >}}

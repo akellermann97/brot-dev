@@ -30,7 +30,7 @@ The iPhone 11 Pro came with three rear cameras. Interestingly, not every lens in
 
 ### The Main Camera
 
-{{< exhibit class="2cl" >}}
+{{< exhibit class="two-cl" >}}
 {{< figure src="/img/iphone11/IMG_3752.jpg" >}}
 {{< figure src="/img/iphone11/IMG_3355.jpg" >}}
 {{< /exhibit >}}
@@ -62,7 +62,7 @@ Shooting at 1/60th of a second produced images that were still sharp, and if you
 The RAWs out of this camera are finicky. Under good lighting, they can be quite easy to work with. In Capture One, they're pretty easy to correct the basic flaws. Limited Dynamic range means you'll need to bring down the highlights and up the shadows to get something looking more 'normal' as a base, and there's quite a bit of vignetting in the corners that needs to be corrected.
 
 ### RAW vs Processed RAW vs HEIC
-{{< exhibit class="3cl" >}}
+{{< exhibit class="three-cl" >}}
 {{< figure src="/img/iphone11/no_adjustments.jpg" caption="Raw imported into Capture One and exported with no adjustments" >}}
 {{< figure src="/img/iphone11/edited_raw.jpg" caption="Raw imported and edited in Capture One" >}}
 {{< figure src="/img/iphone11/SOOC.jpg" caption="HEIC from Straight out of Camera" >}}
@@ -78,7 +78,7 @@ Example Images Captured using Halide's HEIC+RAW mode.
 
 ## Straight Out of Camera (SOOC) Images
 With good lighting, you can get really punchy images with good color and very little noise. Here are a couple of images with no editing, just straight out of camera.
-{{< exhibit class="2cl" >}}
+{{< exhibit class="two-cl" >}}
 {{< figure src="/img/iphone11/IMG_2516.jpg" >}}
 {{< figure src="/img/iphone11/IMG_2593.jpg" >}}
 {{< /exhibit >}}
