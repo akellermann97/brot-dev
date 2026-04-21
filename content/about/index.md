@@ -6,16 +6,16 @@ layout: about
 
 <br>
 
-Hey! I'm Alex Kellermann, a Security Engineer based in New York City, Cloud Security, Application Security, and everything in between. German Duolingo Score 58 (and working on it), amateur seamster. This website's a bit of a melting pot of all the things I like to talk about. All opinions are my own!
+Hey! I'm Alex Kellermann, a Security Engineer based in New York City, Cloud Security, Application Security, and everything in between. German Duolingo Score 60 (and working on it), amateur seamster, photography enthusiast. This website's a bit of a melting pot of all the things I like to talk about and some photos I've taken. All opinions are my own!
 
 
 ## Role History: *2019-present*
 
 |                                                                |             |
 | -------------------------------------------------------------- | ----------- |
-| Cybersecurity Engineer [**@🤫**] | *coming soon*  |
+| Cybersecurity Engineer **@█████**                               | *2026-Present*  |
 | Senior Security Engineer [**@Duolingo**](https://duolingo.com) | *2023—2025*  |
-| Security Engineer [**@Hinge**](https://hinge.co)               | *2021—2023* |
+| Cloud Security Engineer [**@Hinge**](https://hinge.co)               | *2021—2023* |
 | Cybersecurity Engineer [**@MITRE**](https://mitre.org)         | *2019—2021* |
 
 ## Site Details:
