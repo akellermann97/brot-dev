@@ -9,7 +9,7 @@ cover:
 
 # Japan
 
-{{< figure src="/img/gallery/japan-2026/L1005185.jpg" class="big" >}}
+{{< figure src="/img/gallery/japan-2026/L1005185.jpg" class="wide" >}}
 
 {{< exhibit class="two-cl" >}}
 {{< figure src="/img/gallery/japan-2026/L1005354.jpg" >}}
@@ -21,16 +21,16 @@ The trip starts off in Tokyo. Our hotel was in Minato, so we didn't ever go long
 
 {{< figure src="/img/gallery/japan-2026/L1005111.jpg" class="vert" >}}
 
-{{< exhibit class="two-cl big" >}}
+{{< exhibit class="two-cl wide" >}}
 {{< figure src="/img/gallery/japan-2026/L1005117.jpg" >}}
 {{< figure src="/img/gallery/japan-2026/L1005120.jpg" >}}
 {{< /exhibit >}}
 
-{{< figure src="/img/gallery/japan-2026/L1005647.jpg" class="big" >}}
+{{< figure src="/img/gallery/japan-2026/L1005647.jpg" class="wide" >}}
 
-{{< figure src="/img/gallery/japan-2026/L1005240.jpg" class="big" >}}
+{{< figure src="/img/gallery/japan-2026/L1005240.jpg" class="wide" >}}
 
-{{< figure src="/img/gallery/japan-2026/L1005286.jpg" class="big" >}}
+{{< figure src="/img/gallery/japan-2026/L1005286.jpg" class="wide" >}}
 
 {{< exhibit class="two-cl" >}}
 {{< figure src="/img/gallery/japan-2026/L1005277.jpg" >}}
@@ -81,7 +81,7 @@ The trip starts off in Tokyo. Our hotel was in Minato, so we didn't ever go long
 
 {{< figure src="/img/gallery/japan-2026/L1005223.jpg" class="normal" >}}
 
-{{< figure src="/img/gallery/japan-2026/L1005212.jpg" class="big" >}}
+{{< figure src="/img/gallery/japan-2026/L1005212.jpg" class="wide" >}}
 
 {{< figure src="/img/gallery/japan-2026/L1005210.jpg" class="normal" >}}
 
@@ -192,7 +192,7 @@ We were only here for two days, but there's just so much to see, eat and experie
 {{< figure src="/img/gallery/japan-2026/L1005514.jpg" >}}
 {{< /exhibit >}}
 
-{{< figure src="/img/gallery/japan-2026/L1005545.jpg" class="big" >}}
+{{< figure src="/img/gallery/japan-2026/L1005545.jpg" class="wide" >}}
 
 {{< exhibit class="two-cl" >}}
 {{< figure src="/img/gallery/japan-2026/L1005512.jpg" >}}
@@ -206,7 +206,7 @@ We were only here for two days, but there's just so much to see, eat and experie
 
 We did get to watch some preseason japanese baseball at Kyocera Dome, and yes, the Orix Buffaloes won! Never needing to get out of your seat to get beer is a concept we need to adopt in the States.
 
-{{< figure src="/img/gallery/japan-2026/L1005618.jpg" class="big" >}}
+{{< figure src="/img/gallery/japan-2026/L1005618.jpg" class="wide" >}}
 
 
 ## Nara
@@ -218,14 +218,14 @@ We did get to watch some preseason japanese baseball at Kyocera Dome, and yes, t
 {{< figure src="/img/gallery/japan-2026/L1005583.jpg" >}}
 {{< /exhibit >}}
 
-{{< figure src="/img/gallery/japan-2026/L1005570.jpg" class="big" >}}
+{{< figure src="/img/gallery/japan-2026/L1005570.jpg" class="wide" >}}
 
 {{< exhibit class="two-cl" >}}
 {{< figure src="/img/gallery/japan-2026/L1005603.jpg" class="normal" >}}
 {{< figure src="/img/gallery/japan-2026/L1005595.jpg" class="normal" >}}
 {{< /exhibit >}}
 
-{{< figure src="/img/gallery/japan-2026/L1005600.jpg" class="big" >}}
+{{< figure src="/img/gallery/japan-2026/L1005600.jpg" class="wide" >}}
 
 {{< exhibit class="two-cl" >}}
 {{< figure src="/img/gallery/japan-2026/L1005578.jpg" >}}
