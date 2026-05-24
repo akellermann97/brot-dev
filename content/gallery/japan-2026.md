@@ -32,7 +32,7 @@ The trip starts off in Tokyo. Our hotel was in Minato, so we didn't ever go long
 
 {{< figure src="/img/gallery/japan-2026/L1005286.jpg" class="wide" >}}
 
-{{< exhibit class="two-cl" >}}
+{{< exhibit class="two-cl-vh" >}}
 {{< figure src="/img/gallery/japan-2026/L1005277.jpg" >}}
 {{< figure src="/img/gallery/japan-2026/L1005269.jpg" >}}
 {{< /exhibit >}}
@@ -121,7 +121,7 @@ We were only here for two days, but there's just so much to see, eat and experie
 
 {{< figure src="/img/gallery/japan-2026/L1005441.jpg" class="normal" >}}
 
-{{< exhibit class="two-cl" >}}
+{{< exhibit class="two-cl-vh" >}}
 {{< figure src="/img/gallery/japan-2026/L1005443.jpg" >}}
 {{< figure src="/img/gallery/japan-2026/L1005445.jpg" >}}
 {{< /exhibit >}}
@@ -227,7 +227,7 @@ We did get to watch some preseason japanese baseball at Kyocera Dome, and yes, t
 
 {{< figure src="/img/gallery/japan-2026/L1005600.jpg" class="wide" >}}
 
-{{< exhibit class="two-cl" >}}
+{{< exhibit class="two-cl-vh" >}}
 {{< figure src="/img/gallery/japan-2026/L1005578.jpg" >}}
 {{< figure src="/img/gallery/japan-2026/L1005611.jpg" >}}
 {{< /exhibit >}}
