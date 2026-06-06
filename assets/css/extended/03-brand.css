@@ -1,0 +1,94 @@
+/* ============================================================================
+   brot-dev OVERRIDE — assets/css/extended/03-brand.css
+   Place at:  brot-dev/assets/css/extended/03-brand.css
+   Pushes the racing-green accent the design-system way — generously: link text,
+   blockquote rule, tags, pagination, breadcrumbs, active nav — and gives display
+   headings the wide, heavy Neue DIN VAR editorial set. Loaded last → wins.
+   ========================================================================== */
+
+/* Base headings — Neue DIN VAR, bold by default (with Safari variation settings workaround) */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--sans-serif-font-family);
+  font-style: normal;
+  font-weight: var(--w-bold);
+  font-variation-settings: 'wght' 700, 'slnt' 0;
+}
+
+/* Display headings — Neue DIN VAR, wide & heavy editorial set */
+.first-entry .entry-header h1 {
+  font-family: var(--ui-font-family);
+  font-style: normal;
+  font-weight: var(--w-heavy);
+  font-stretch: 113%;
+  font-variation-settings: 'wght' 800, 'wdth' 113, 'slnt' 0;
+}
+.entry-header h2 {
+  font-family: var(--ui-font-family);
+  font-style: normal;
+  font-weight: var(--w-heavy);
+  font-stretch: 112%;
+  font-variation-settings: 'wght' 800, 'wdth' 112, 'slnt' 0;
+}
+.post-title {
+  font-family: var(--ui-font-family);
+  font-style: normal;
+  font-weight: var(--w-heavy);
+  font-stretch: 113%;
+  font-variation-settings: 'wght' 800, 'wdth' 113, 'slnt' 0;
+}
+.gallery-card-title {
+  font-family: var(--ui-font-family);
+  font-style: normal;
+  font-weight: var(--w-heavy);
+  font-stretch: 112%;
+  font-variation-settings: 'wght' 800, 'wdth' 112, 'slnt' 0;
+}
+.articles-gallery .page-header h1 {
+  font-family: var(--ui-font-family);
+  font-style: normal;
+  font-weight: var(--w-heavy);
+  font-stretch: 122%;
+  font-variation-settings: 'wght' 800, 'wdth' 122, 'slnt' 0;
+}
+.post-content h2 {
+  font-family: var(--ui-font-family);
+  font-style: normal;
+  font-weight: var(--w-bold);
+  font-stretch: 108%;
+  font-variation-settings: 'wght' 700, 'wdth' 108, 'slnt' 0;
+}
+.post-content h3 {
+  font-family: var(--ui-font-family);
+  font-style: normal;
+  font-weight: var(--w-bold);
+  font-variation-settings: 'wght' 700, 'slnt' 0;
+}
+
+/* Meta / captions / breadcrumbs in Neue DIN VAR */
+.post-meta, .entry-footer, .breadcrumbs {
+  font-family: var(--ui-font-family);
+  font-style: normal;
+  font-weight: var(--w-medium);
+  font-variation-settings: 'wght' 500, 'slnt' 0;
+}
+
+/* Prose links — green TEXT on a hairline that thickens to green on hover */
+.post-content a { color: var(--accent); box-shadow: 0 1px 0 var(--br-accent-line); }
+.post-content a:hover { box-shadow: 0 2px 0 var(--accent); color: var(--br-accent-hover); }
+.breadcrumbs a { color: var(--accent); box-shadow: 0 1px 0 var(--br-accent-line); }
+.breadcrumbs a:hover { box-shadow: 0 2px 0 var(--accent); }
+
+/* Blockquote — racing-green left rule */
+.post-content blockquote { border-inline-start: 3px solid var(--accent); }
+
+/* Tags — soft green chips */
+.post-tags a, .terms-tags a {
+  color: var(--accent);
+  background: var(--br-accent-soft);
+  border: 1px solid var(--br-accent-line);
+}
+.post-tags a:hover, .terms-tags a:hover { background: color-mix(in srgb, var(--accent) 16%, transparent); }
+
+/* Pagination — solid green pills (was ink) */
+.pagination a { background: var(--accent); color: var(--br-accent-ink); }
+.pagination a:hover { background: var(--br-accent-hover); }

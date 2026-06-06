@@ -1,0 +1,171 @@
+/* ============================================================================
+   brot-dev OVERRIDE — assets/css/extended/02-header.css
+   Place at:  brot-dev/assets/css/extended/02-header.css
+
+   Scroll-aware sticky header. Pairs with layouts/partials/header.html, whose
+   inline script toggles these classes on #siteHeader:
+     .at-top    → at the very top → plain inline header (no shadow)
+     .is-pinned → scrolled down THEN up → reveals as a box with a soft shadow
+     .is-hidden → scrolling down → slides up so content shines through
+   Mobile: desktop #menu collapses into a hamburger dropdown (.mobile-menu).
+
+   Default look = floating rounded card (gentle 14px radius) + drop shadow.
+   Two alternates ship gated behind  <html data-header="bar|slim">.
+
+   ★ Every rule is scoped to #siteHeader (id) so it OUTRANKS the theme's header
+     selectors (.nav, .nav #menu a, #menu .active …) no matter the load order.
+     We also neutralise the theme's own hamburger (::before/::after bars) and the
+     theme's .nav padding/flex-wrap, since our markup differs.
+   ========================================================================== */
+
+:root { --ease: cubic-bezier(.4, 0, .2, 1); }
+
+/* JS sets the exact px; this is a sane fallback so content never hides under the bar */
+body { padding-top: var(--header-height, 60px); }
+
+#siteHeader {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 100;
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  margin: 0;
+  will-change: transform;
+  transition: transform .38s var(--ease), background-color .3s var(--ease),
+              box-shadow .3s var(--ease), border-color .3s var(--ease);
+}
+#siteHeader.is-hidden { transform: translateY(-100%); }
+
+#siteHeader .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: var(--gap);
+  max-width: calc(var(--nav-width) + var(--gap) * 2);
+  min-height: var(--header-height);
+  margin: 0 auto;
+  padding: 0 var(--gap);
+  transition: background-color .3s var(--ease), box-shadow .3s var(--ease),
+              margin .3s var(--ease), border-radius .3s var(--ease), max-width .3s var(--ease);
+}
+
+/* ---- logo / wordmark — force Neue DIN VAR (kills theme's din2014bold) ---- */
+#siteHeader .logo { margin: 0; flex-wrap: nowrap; }
+#siteHeader .logo a {
+  display: flex; align-items: center; gap: 9px;
+  font-family: var(--ui-font-family);
+  font-style: normal;
+  font-weight: var(--w-black);
+  font-size: 23px; font-stretch: 106%; letter-spacing: .005em;
+  font-variation-settings: 'wght' 900, 'wdth' 106, 'slnt' 0;
+  text-transform: uppercase;
+  color: var(--primary); line-height: 1; margin: 0;
+}
+#siteHeader .logo .loaf { font-size: 20px; transform: translateY(-1px); }
+#siteHeader .logo a img, #siteHeader .logo a svg { display: inline; vertical-align: middle; height: 26px; transform: none; margin: 0; border-radius: 6px; }
+#siteHeader .logo a:active { transform: scale(.96); }
+
+/* ---- desktop menu — force Neue DIN VAR (kills theme's din2014regular) ---- */
+#siteHeader #menu {
+  display: flex; align-items: center; gap: 4px;
+  list-style: none; margin: 0; padding: 0; overflow: visible;
+  font-family: var(--ui-font-family); font-style: normal; font-weight: var(--w-semibold);
+  font-variation-settings: 'wght' 600, 'slnt' 0;
+}
+#siteHeader #menu li + li { margin-inline-start: 0; }
+#siteHeader .nav li:hover { background: transparent; }   /* kill theme's li-level pill */
+#siteHeader #menu a {
+  display: block; font-size: 16px; padding: 7px 13px; border-radius: var(--radius, 4px);
+  color: var(--primary); cursor: pointer; border-bottom: 0;
+  transition: background-color .15s var(--ease), color .15s var(--ease);
+}
+#siteHeader #menu a:hover { background: var(--tertiary); }
+#siteHeader #menu a.active {
+  color: var(--accent); font-weight: var(--w-bold);
+  font-variation-settings: 'wght' 700, 'slnt' 0;
+  border-bottom: 0; box-shadow: 0 2px 0 var(--accent); border-radius: 2px;
+}
+
+/* ---- hamburger (our 3-span markup) — neutralise theme's ::before/::after bars ---- */
+#siteHeader .hamburger {
+  display: none; flex-direction: column; justify-content: center; gap: 5px;
+  width: 42px; height: 42px; padding: 9px; margin: 0; border: 0; border-radius: var(--radius, 4px);
+  background: none; cursor: pointer; line-height: normal;
+}
+#siteHeader .hamburger::before, #siteHeader .hamburger::after { content: none; display: none; width: auto; height: auto; background: none; }
+#siteHeader .hamburger span {
+  display: block; height: 2.5px; width: 100%; background: var(--primary); border-radius: 2px;
+  transition: transform .28s var(--ease), opacity .2s var(--ease);
+}
+#siteHeader.menu-open .hamburger span:nth-child(1) { transform: translateY(7.5px) rotate(45deg); }
+#siteHeader.menu-open .hamburger span:nth-child(2) { opacity: 0; }
+#siteHeader.menu-open .hamburger span:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
+
+/* ---- mobile dropdown panel ---- */
+#siteHeader .mobile-menu {
+  display: none; overflow: hidden; max-height: 0; opacity: 0;
+  transition: max-height .3s var(--ease), opacity .25s var(--ease);
+  background: var(--entry); border-top: 1px solid var(--border);
+}
+#siteHeader .mobile-menu ul { list-style: none; margin: 0; padding: 8px var(--gap) 16px; min-width: 0; }
+#siteHeader .mobile-menu li { margin: 0; text-align: left; }
+#siteHeader .mobile-menu a {
+  display: block; font-family: var(--ui-font-family); font-style: normal; font-weight: var(--w-semibold);
+  font-variation-settings: 'wght' 600, 'slnt' 0;
+  font-size: 19px; padding: 13px 6px; color: var(--primary); cursor: pointer; border-radius: var(--radius, 4px); border-bottom: 0;
+}
+#siteHeader .mobile-menu a.active { color: var(--accent); }
+#siteHeader .mobile-menu a:active { background: var(--tertiary); }
+
+/* ============================================================================
+   DEFAULT look — floating rounded card (gentle 14px radius) + drop shadow
+   ========================================================================== */
+#siteHeader { background: transparent; }
+#siteHeader.is-pinned .nav {
+  background: var(--entry); border-radius: 14px; margin: 9px auto;
+  max-width: min(900px, calc(100% - 26px)); padding: 0 14px 0 22px;
+  box-shadow: 0 14px 36px rgba(20, 20, 20, .17), 0 2px 6px rgba(20, 20, 20, .07);
+}
+
+/* ---- ALT: full-width solid bar  (<html data-header="bar">) ---- */
+[data-header="bar"] #siteHeader.at-top    { background: var(--theme); }
+[data-header="bar"] #siteHeader.is-pinned {
+  background: var(--entry); border-bottom-color: var(--border);
+  box-shadow: 0 8px 28px rgba(20, 20, 20, .13), 0 1px 0 rgba(20, 20, 20, .04);
+}
+[data-header="bar"] #siteHeader.is-pinned .nav { background: transparent; border-radius: 0; margin: 0 auto; max-width: calc(var(--nav-width) + var(--gap) * 2); padding: 0 var(--gap); box-shadow: none; }
+
+/* ---- ALT: slim translucent / blurred bar  (<html data-header="slim">) ---- */
+[data-header="slim"] #siteHeader { --header-height: 52px; }
+[data-header="slim"] #siteHeader.is-pinned {
+  background: color-mix(in srgb, var(--theme) 76%, transparent);
+  -webkit-backdrop-filter: blur(14px) saturate(1.15); backdrop-filter: blur(14px) saturate(1.15);
+  border-bottom-color: color-mix(in srgb, var(--primary) 8%, transparent);
+  box-shadow: 0 6px 18px rgba(20, 20, 20, .05);
+}
+[data-header="slim"] #siteHeader.is-pinned .nav { background: transparent; border-radius: 0; margin: 0 auto; max-width: calc(var(--nav-width) + var(--gap) * 2); padding: 0 var(--gap); box-shadow: none; }
+[data-header="slim"] #siteHeader .logo a { font-size: 21px; }
+
+/* reduced motion: show/hide without the slide */
+@media (prefers-reduced-motion: reduce) {
+  #siteHeader { transition: background-color .3s, box-shadow .3s; }
+  #siteHeader.is-hidden { transform: none; }
+}
+
+/* ============================================================================
+   RESPONSIVE — mobile (≤768px). Overrides the theme's zmedia.css header rules.
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+  #siteHeader #menu { display: none; }
+  #siteHeader .hamburger { display: flex; }
+  #siteHeader .mobile-menu { display: block; }
+  #siteHeader.menu-open .mobile-menu { max-height: 70vh; opacity: 1; }
+
+  /* when the menu is open the card is always a solid box */
+  #siteHeader.menu-open .nav,
+  #siteHeader.menu-open.is-pinned .nav { background: var(--entry); box-shadow: 0 8px 24px rgba(20,20,20,.10); border-radius: 0 0 14px 14px; margin: 0 auto; max-width: 100%; padding: 0 var(--gap); }
+  #siteHeader.menu-open { background: var(--entry); }
+
+  #siteHeader .logo a { font-size: 21px; }
+}
