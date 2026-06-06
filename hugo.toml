@@ -3,7 +3,6 @@ author = "Alex Kellermann"
 languageCode = 'en-us'
 title = 'BROT.DEV 🍞'
 theme = 'brot'
-assetDir = 'static'
 enableInlineShortcodes = true
 pluralizelisttitles = false
 enableRobotsTXT = true
@@ -20,6 +19,9 @@ author = "Alex Kellermann"
 defaultTheme = "auto"
 images = ["brotheader.png"]
 hideAuthor = true
+
+[params.label]
+  text = "🍞 brot.dev"
 
 
 [markup]
@@ -57,6 +59,12 @@ hideAuthor = true
     weight = 3 
 
 
+[[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+[[module.mounts]]
+    source = 'static'
+    target = 'assets'
 [[module.mounts]]
     source = 'static'
     target = 'static'

@@ -1,0 +1,62 @@
+/* ============================================================================
+   brot-dev OVERRIDE — assets/css/extended/00-fonts.css
+   Place at:  brot-dev/assets/css/extended/00-fonts.css
+
+   Hugo bundles EVERY  assets/css/extended/*.css  and loads them LAST (after the
+   whole theme), so files dropped here are guaranteed to load and win — unlike
+   replacing a theme file by path, which depends on the union filesystem.
+
+   Neue DIN VAR is a VARIABLE font:  weight 100–900 · width 50–200% · slant ±10°.
+   Keep upright text explicit: Safari can otherwise resolve the slant axis from
+   the italic face when later rules set only weight/width variation axes.
+   The head preloads this 1 MB font, and font-display:block avoids painting a
+   fallback face before the variable axes are available.
+
+   Font file: brot-dev/static/fonts/NeueDINVAR.woff2  →  served at /fonts/…
+   ========================================================================== */
+
+/* Upright (slnt = 0) */
+@font-face {
+  font-family: "BrotSans";
+  src: url("/fonts/NeueDINVAR.woff2") format("woff2");
+  font-weight: 100 900;
+  font-stretch: 50% 200%;
+  font-style: normal;
+  font-display: block;
+}
+
+html {
+  font-synthesis: none;
+}
+
+/* Italic (slnt = -10) */
+@font-face {
+  font-family: "BrotSans";
+  src: url("/fonts/NeueDINVAR.woff2") format("woff2");
+  font-weight: 100 900;
+  font-stretch: 50% 200%;
+  font-style: italic;
+  font-display: block;
+}
+
+/* ---- Safari & general variable font utilities ---- */
+
+/* Italic — triggers the italic @font-face block */
+em, i {
+  font-family: "BrotSans", sans-serif;
+  font-style: italic;
+  font-variation-settings: 'slnt' -10;
+}
+
+/* Retalic — no @font-face block for this; use variation-settings directly */
+.retalic {
+  font-family: "BrotSans", sans-serif;
+  font-style: normal;
+  font-variation-settings: 'slnt' 10;
+}
+
+/* Fine-grained axis control helper (custom overrides) */
+.font-custom {
+  font-family: "BrotSans", sans-serif;
+  font-variation-settings: 'wght' 650, 'wdth' 87.5, 'slnt' 0;
+}

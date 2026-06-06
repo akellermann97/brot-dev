@@ -1,0 +1,11 @@
+{{- /* brot.dev redesign — 404. Big green numeral on warm paper + a way home.
+       Site-level override of the theme's _default 404. */ -}}
+{{- define "main" }}
+<div class="not-found">
+  <div class="not-found-inner">
+    <p class="nf-code">404</p>
+    <p class="nf-msg">This page got lost in the melting pot.</p>
+    <a class="nf-home" href="{{ "" | absLangURL }}">« back to brot.dev</a>
+  </div>
+</div>
+{{- end }}{{/* end main */ -}}

@@ -1,5 +1,5 @@
 ---
-title: 'Halide Mark 3 - First Impressions'
+title: 'Halide Mark 3 — First Impressions'
 date: 2026-06-02
 summary: "Halide Mark III promises \"the most beautiful photos from an iPhone.\" After running some old Raws through the new Photo Lab — iPhone, Leica M11, and all — I'm inclined to believe it. Just watch where you step, there are bugs around."
 draft: false
@@ -8,8 +8,6 @@ showreadingtime: true
 cover:
     image: '/img/halide-v3-first-impressions/HEIF_Image-52EE2249BCC6-1.jpg'
 ---
-
-# Halide Mark III
 
 The newest "camera and photo lab for iPhone" from [Lux Camera](https://www.lux.camera/halide-mark-iii/) is Halide Mark III, released May 26th, 2026. I've been using Halide since Mark I, having bought the perpetual license for Mark II, which granted me access to Mark III upon release. Mark III's update promises "The most beautiful photos that can come from an iPhone". Does it live up to the hype?
 

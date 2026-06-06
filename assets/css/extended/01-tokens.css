@@ -1,0 +1,58 @@
+/* ============================================================================
+   brot-dev OVERRIDE — assets/css/extended/01-tokens.css
+   Place at:  brot-dev/assets/css/extended/01-tokens.css
+
+   Re-declares the brand tokens so we DON'T have to replace the theme's
+   core/theme-vars.css by path (which didn't take). Loaded last → wins.
+
+     • accent  ochre-gold  →  racing green  (one token: --br-accent / --accent)
+     • sans / UI font  din2014  →  Neue DIN VAR  (per-role weights via --w-*)
+     • LIGHT ONLY — the .dark block below forces the dark tokens back to light
+       values, so even if PaperMod adds `body.dark` (OS dark mode), the site
+       stays warm-paper. Belt: also set defaultTheme="light" in your config.
+   ========================================================================== */
+
+:root {
+  /* ---- accent: THE brand color. Change this one value to recolour. ---- */
+  --br-accent:       #0B3D2E;                                              /* deep racing / phthalo green */
+  --br-accent-hover: color-mix(in srgb, var(--br-accent) 78%, white);
+  --br-accent-soft:  color-mix(in srgb, var(--br-accent) 9%, transparent);
+  --br-accent-line:  color-mix(in srgb, var(--br-accent) 22%, transparent);
+  --br-accent-ink:   #ffffff;
+  --accent: var(--br-accent);     /* the theme's own token now points to green */
+
+  /* ---- surfaces & ink (warm-paper identity) ---- */
+  --theme:     rgb(250, 249, 246);
+  --entry:     rgb(255, 255, 255);
+  --primary:   rgb(30, 30, 30);
+  --secondary: rgb(108, 108, 108);
+  --tertiary:  rgb(214, 214, 214);
+  --content:   rgb(31, 31, 31);
+  --border:    rgb(238, 238, 238);
+
+  /* ---- type families (Neue DIN VAR everywhere DIN 2014 was) ---- */
+  --sans-serif-font-family: "BrotSans", "Helvetica Neue", Arial, sans-serif;
+  --ui-font-family:         "BrotSans", "Helvetica Neue", Arial, sans-serif;
+  --serif-font-family: Georgia, "Times New Roman", Times, serif;
+  --serif-font-weight: 400;
+
+  /* ---- Neue DIN VAR weight axis (per-role, not one bold cut) ---- */
+  --w-medium: 500;
+  --w-semibold: 600;
+  --w-bold: 700;
+  --w-heavy: 800;
+  --w-black: 900;
+}
+
+/* ---- Force light-only: neutralise the theme's dark tokens ---- */
+.dark {
+  --theme:     rgb(250, 249, 246);
+  --entry:     rgb(255, 255, 255);
+  --primary:   rgb(30, 30, 30);
+  --secondary: rgb(108, 108, 108);
+  --tertiary:  rgb(214, 214, 214);
+  --content:   rgb(31, 31, 31);
+  --code-bg:   rgb(241, 239, 235);
+  --code-block-bg: rgb(28, 29, 33);
+  --border:    rgb(238, 238, 238);
+}

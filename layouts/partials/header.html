@@ -1,0 +1,95 @@
+{{- /* ============================================================================
+   brot-dev OVERRIDE — layouts/partials/header.html   (full replacement)
+   Place at:  brot-dev/layouts/partials/header.html
+
+   • Scroll-aware sticky header (see assets/css/extended/02-header.css).
+   • Theme toggle + dark-mode bootstrap REMOVED — the redesign is light only.
+   • Lowercase wordmark (🍞 + site label) and a hamburger menu on mobile.
+   ============================================================================ */ -}}
+
+<header class="header at-top" id="siteHeader">
+  <nav class="nav">
+    <div class="logo">
+      {{- $label := (site.Params.label.text | default site.Title | default "brot.dev") }}
+      <a href="{{ "" | absLangURL }}" accesskey="h" title="{{ $label }} (Alt + H)">
+        {{- /* Render a configured logo image/svg if present; otherwise just the
+               label text — which already carries the 🍞. (No synthetic loaf, so
+               the bread isn't doubled. Wordmark is lowercased in CSS.) */ -}}
+        {{- if hasPrefix site.Params.label.iconSVG "<svg" }}{{ site.Params.label.iconSVG | safeHTML }}
+        {{- else if site.Params.label.icon }}<img src="{{ site.Params.label.icon | absURL }}" alt="" aria-label="logo">{{ end -}}
+        <span class="wordmark">{{ $label }}</span>
+      </a>
+    </div>
+
+    {{- $currentPage := . }}
+    <ul id="menu">
+      {{- range site.Menus.main }}
+      {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL)) | absLangURL }}
+      {{- $page_url := $currentPage.Permalink | absLangURL }}
+      <li>
+        <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }}"
+           {{- if eq $menu_item_url $page_url }} class="active"{{ end }}>
+          {{- .Pre }}{{ .Name }}{{ .Post -}}
+          {{- if (findRE "://" .URL) }}&nbsp;
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path><path d="M15 3h6v6"></path><path d="M10 14L21 3"></path></svg>
+          {{- end }}
+        </a>
+      </li>
+      {{- end }}
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu">
+    <ul>
+      {{- range site.Menus.main }}
+      {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL)) | absLangURL }}
+      {{- $page_url := $currentPage.Permalink | absLangURL }}
+      <li><a href="{{ .URL | absLangURL }}"{{ if eq $menu_item_url $page_url }} class="active"{{ end }}>{{ .Pre }}{{ .Name }}{{ .Post }}</a></li>
+      {{- end }}
+    </ul>
+  </div>
+</header>
+
+<script>
+(function () {
+  var header = document.getElementById('siteHeader');
+  if (!header) return;
+  var burger = document.getElementById('hamburger');
+  var TOP = 8, DELTA = 6, lastY = window.scrollY || window.pageYOffset || 0;
+
+  function setPad() { document.body.style.paddingTop = header.offsetHeight + 'px'; }
+
+  function onScroll() {
+    var y = window.scrollY || window.pageYOffset;
+    if (y <= TOP) { header.classList.add('at-top'); header.classList.remove('is-pinned', 'is-hidden'); lastY = y; return; }
+    header.classList.remove('at-top');
+    if (header.classList.contains('menu-open')) { lastY = y; return; }
+    if (Math.abs(y - lastY) < DELTA) return;
+    if (y > lastY) { header.classList.add('is-hidden'); header.classList.remove('is-pinned'); }
+    else { header.classList.add('is-pinned'); header.classList.remove('is-hidden'); }
+    lastY = y;
+  }
+
+  window.addEventListener('scroll', function () { window.requestAnimationFrame(onScroll); }, { passive: true });
+  window.addEventListener('resize', setPad);
+  window.addEventListener('load', setPad);
+
+  if (burger) {
+    burger.addEventListener('click', function (e) {
+      e.preventDefault();
+      var open = header.classList.toggle('menu-open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+  header.querySelectorAll('.mobile-menu a').forEach(function (a) {
+    a.addEventListener('click', function () { header.classList.remove('menu-open'); burger && burger.setAttribute('aria-expanded', 'false'); });
+  });
+
+  setPad();
+  onScroll();
+})();
+</script>
