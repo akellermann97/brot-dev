@@ -1,3 +1,4 @@
 [submodule "themes/brot"]
 	path = themes/brot
 	url = https://github.com/akellermann97/brot-theme
+    branch = main

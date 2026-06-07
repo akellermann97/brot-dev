@@ -40,7 +40,12 @@
 <style>
 /* keep the seal inside the same reading-width column as the body <p>'s,
    left-aligned with the paragraph text (post-content itself is unbound) */
-.bd-seal-wrap{ max-width:var(--reading-width); margin:1.5rem auto; }
+.bd-seal-wrap{ max-width:var(--reading-width); margin:1.5rem auto; box-sizing:border-box; }
+/* match the theme's mobile body gutter (zmedia.css, ≤768px → 16px) so the seal
+   lines up with the text instead of hugging the screen edge */
+@media screen and (max-width:768px){
+  .bd-seal-wrap{ padding-left:16px; padding-right:16px; }
+}
 .bd-seal{
   --bd-band:#d81f27; --bd-ink:rgb(30,30,30);
   width:248px; box-sizing:border-box; margin:0;
@@ -78,7 +83,7 @@
 {{- end -}}
 
 <div class="bd-seal-wrap">
-<figure class="bd-seal" style="{{ $style | safeCSS }}">
+<figure class="bd-seal no-pad" style="{{ $style | safeCSS }}">
   <div class="bd-seal__band">{{ $title }}</div>
   <div class="bd-seal__body">
     {{- if or $subject $sub2 }}
