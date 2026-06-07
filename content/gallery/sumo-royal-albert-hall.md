@@ -7,8 +7,6 @@ cover:
 tags: [Gallery, Leica, Zeiss, 28mm elmarit, 28mm, M11, Leica M11, Sumo, London]
 ---
 
-# Sumo at the Royal Albert Hall
-
 Sumo returns to the Royal Albert Hall in London for the first time in 34 years. While not an official tournament (wins and losses don't impact the wrestler's standing), these are the real deal wrestlers. Posters for the event were plastered over the tube, and there was no shortage of Reels and TikToks showing the wrestlers checking out sights like the Buckingham palace, British Museum, and even some showing the Yokozuna Horshoryu [checking out Chelsea FC](https://www.instagram.com/reel/DQCzRFlDHPR/). Despite my best efforts, I didn't end up running into any of the wreslters out when I was exploring London.
 
 {{< exhibit class="two-cl-1fr-2fr" >}}

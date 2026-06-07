@@ -7,8 +7,6 @@ cover:
     image: '/img/gallery/summer-2025/IMG_8561.jpg'
 ---
 
-# Summer 2025
-
 June starts with a trip to the Waffle House (#1614). Going at 7pm, it felt sacrilegous. The Waffle House should only be frequented between the hours of 10pm till 11am. At 7pm it was eerily quiet, devoid of life. A single cook and a waitress who was on her phone, arguing with sounded like a lover. She forgot my toast. I didn't bring it up. You get what you get at the waffle house. It's a beautiful place.
 
 {{< exhibit class="two-cl" >}}

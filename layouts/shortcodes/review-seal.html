@@ -1,0 +1,93 @@
+{{- /* ===========================================================================
+     review-seal — brot.dev review badge
+     Place at:  layouts/shortcodes/review-seal.html
+
+     Usage in a post (.md):
+       {{< review-seal rating="very good"
+                       subject="Leica M11" subject2="Field review"
+                       source="brot.dev 06/2026" >}}
+
+       {{< review-seal rating="needs work"
+                       subject="Halide Mark III" subject2="Security"
+                       color="green" >}}
+
+     Params (all optional except rating):
+       rating    big verdict text     — default "very good"
+       subject   small line 1         — the thing reviewed
+       subject2  small line 2
+       source    bottom line          — e.g. "brot.dev 06/2026"
+       color     red | green | ink    — band colour preset (default red)
+       band      any CSS colour       — overrides `color` (e.g. band="#7a1f2b")
+       ink       any CSS colour       — recolour the big rating text
+       title     band wordmark        — default "BROT.DEV"
+   =========================================================================== */ -}}
+
+{{- $rating  := .Get "rating"   | default "very good" -}}
+{{- $subject := .Get "subject"  | default "" -}}
+{{- $sub2    := .Get "subject2" | default "" -}}
+{{- $source  := .Get "source"   | default "" -}}
+{{- $title   := .Get "title"    | default "BROT.DEV" -}}
+{{- $color   := .Get "color"    | default "red" -}}
+{{- $presets := dict "red" "#d81f27" "green" "#0b3d2e" "ink" "#1e1e1e" -}}
+{{- $band    := .Get "band" | default (index $presets $color) | default "#d81f27" -}}
+{{- $ink     := .Get "ink"  | default "" -}}
+{{- $style   := printf "--bd-band:%s" $band -}}
+{{- with $ink }}{{ $style = printf "%s;--bd-ink:%s" $style . }}{{ end -}}
+
+{{- /* inject the component CSS once per page, no matter how many seals */ -}}
+{{- if not (.Page.Scratch.Get "bdSealCSS") -}}
+{{- .Page.Scratch.Set "bdSealCSS" true -}}
+<style>
+/* keep the seal inside the same reading-width column as the body <p>'s,
+   left-aligned with the paragraph text (post-content itself is unbound) */
+.bd-seal-wrap{ max-width:var(--reading-width); margin:1.5rem auto; }
+.bd-seal{
+  --bd-band:#d81f27; --bd-ink:rgb(30,30,30);
+  width:248px; box-sizing:border-box; margin:0;
+  background:#fff; border:1px solid #e7e5e0; border-radius:4px; overflow:hidden;
+  font-family:var(--ui-font-family,"BrotSans","Helvetica Neue",Arial,sans-serif);
+  font-style:normal; font-synthesis:none; color:rgb(30,30,30);
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+}
+.bd-seal__band{
+  background:var(--bd-band); color:#fff; text-align:center;
+  font-style:normal; font-weight:900;
+  font-stretch:122%;          /* ← band wordmark WIDTH. Neue DIN VAR goes to 200%. */
+  font-variation-settings:'wght' 900,'wdth' 122,'slnt' 0;   /* Safari slnt guardrail */
+  font-size:30px; line-height:1; letter-spacing:.02em; padding:13px 12px 15px;
+}
+.bd-seal__body{ padding:15px 17px 16px; display:flex; flex-direction:column; }
+.bd-seal__subject{
+  display:flex; flex-direction:column;
+  font-style:normal; font-weight:500;
+  font-variation-settings:'wght' 500,'slnt' 0;   /* Safari slnt guardrail */
+  font-size:16px; line-height:1.16; color:rgb(30,30,30);
+}
+.bd-seal__rating{
+  font-style:normal; font-weight:800; font-stretch:92%;
+  font-variation-settings:'wght' 800,'wdth' 92,'slnt' 0;   /* Safari slnt guardrail */
+  font-size:41px; line-height:1;
+  letter-spacing:-.005em; color:var(--bd-ink); margin:22px 0 16px; text-wrap:balance;
+}
+.bd-seal__source{
+  font-style:normal; font-weight:600;
+  font-variation-settings:'wght' 600,'slnt' 0;   /* Safari slnt guardrail */
+  font-size:15px; line-height:1.1; color:rgb(30,30,30);
+}
+</style>
+{{- end -}}
+
+<div class="bd-seal-wrap">
+<figure class="bd-seal" style="{{ $style | safeCSS }}">
+  <div class="bd-seal__band">{{ $title }}</div>
+  <div class="bd-seal__body">
+    {{- if or $subject $sub2 }}
+    <div class="bd-seal__subject">{{ with $subject }}<span>{{ . }}</span>{{ end }}{{ with $sub2 }}<span>{{ . }}</span>{{ end }}</div>
+    {{- end }}
+    <div class="bd-seal__rating">{{ $rating }}</div>
+    {{- with $source }}
+    <div class="bd-seal__source">{{ . }}</div>
+    {{- end }}
+  </div>
+</figure>
+</div>

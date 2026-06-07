@@ -6,8 +6,6 @@ tags: [Summer, Gallery, Leica, Zeiss, 50mm planar, 28mm elmarit, M11, Leica M11,
 cover:
     image: '/img/gallery/summer-2024/L1001582.jpg'
 ---
-# Summer 2024
-
 ## New York City
 
 Summers in New York City are brutal. Friends and family coming in and out of the city, subways serving as a sauna for only $2.90, and rancid-yet-unidentifiable smells. But at least we have air conditioning.

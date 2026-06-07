@@ -266,6 +266,8 @@ I would recommend Halide as a better use of money for those wishing to get the "
 * Filtering in Photo Lab is limited, hard to find photos if there is a crash
 * Export Options limited to 10MP
 
+{{< review-seal rating="Good" subject="Halide Mark III" subject2="iPhone App" color="red" source="June 2026" >}}
+
 #### Disclaimer -- HEIC conversions
 
 The photos you'll see are either JPEG or JPEG-XL depending on your browser's support for the formats. Halide Mark III currently only exports in HEIC format, so there was some formatting using Mac OS's built in `sips` tool at Quality 95. So there may be some image degradation as a result of the conversion.

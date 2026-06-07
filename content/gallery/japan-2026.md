@@ -7,8 +7,6 @@ cover:
     image: '/img/gallery/japan-2026/L1005212.jpg'
 ---
 
-# Japan
-
 {{< figure src="/img/gallery/japan-2026/L1005185.jpg" class="wide" >}}
 
 {{< exhibit class="two-cl" >}}
