@@ -1,0 +1,73 @@
+/* ============================================================================
+   brot-dev OVERRIDE — assets/css/extended/04-404.css
+   Place at:  brot-dev/assets/css/extended/04-404.css
+
+   Styles the redesigned site-level 404 (layouts/404.html). The theme's
+   common/404.css only styles a bare `.not-found` numeral (position:absolute,
+   font-size:160px) — so the redesigned markup (.nf-code / .nf-msg / .nf-home)
+   had no styles and the message + link inherited the 160px giant. This resets
+   .not-found to a calm centered column and styles the new parts on-brand.
+   Loaded last → wins.
+   ========================================================================== */
+
+/* Reset the theme's giant absolute numeral back to a calm centered column */
+.not-found {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 62vh;
+  height: auto;
+  padding: 2rem 1rem;
+  font-size: inherit;
+  font-weight: inherit;
+  text-align: center;
+}
+
+.not-found-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  max-width: 32rem;
+}
+
+/* Big green numeral — wide, heavy Neue DIN VAR (Safari slnt guardrail) */
+.nf-code {
+  margin: 0;
+  font-family: var(--ui-font-family);
+  font-style: normal;
+  font-weight: var(--w-black);
+  font-stretch: 122%;
+  font-variation-settings: 'wght' 900, 'wdth' 122, 'slnt' 0;
+  font-size: clamp(6rem, 22vw, 13rem);
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  color: var(--accent);
+}
+
+.nf-msg {
+  margin: 0;
+  font-family: var(--ui-font-family);
+  font-style: normal;
+  font-weight: var(--w-medium);
+  font-variation-settings: 'wght' 500, 'slnt' 0;
+  font-size: clamp(1.05rem, 2.5vw, 1.35rem);
+  color: var(--primary);
+}
+
+/* A way home — green text on a hairline that thickens on hover (brand link style) */
+.nf-home {
+  margin-top: 0.8rem;
+  font-family: var(--ui-font-family);
+  font-style: normal;
+  font-weight: var(--w-semibold);
+  font-variation-settings: 'wght' 600, 'slnt' 0;
+  color: var(--accent);
+  box-shadow: 0 1px 0 var(--br-accent-line);
+  transition: box-shadow 0.18s ease, color 0.18s ease;
+}
+.nf-home:hover {
+  color: var(--br-accent-hover);
+  box-shadow: 0 2px 0 var(--accent);
+}

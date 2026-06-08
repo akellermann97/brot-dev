@@ -23,6 +23,29 @@ hideAuthor = true
 [params.label]
   text = "🍞 brot.dev"
 
+# ----------------------------------------------------------------------------
+# Structured data (schema.org / JSON-LD) — drives partials/templates/schema_json.html
+#
+# Section → schema-type routing lives here (not in templates) so renaming a
+# content section or adding a new one only touches this block:
+#   • personSection : the section whose page represents the site's Person (you)
+#   • blogSections  : sections whose pages are Blogs / BlogPostings (append to grow)
+#   • publisherType : entity type for the site's author/publisher (Person | Organization)
+# ----------------------------------------------------------------------------
+[params.schema]
+  publisherType = "Person"
+  personSection = "about"
+  blogSections  = ["posts", "gallery"]
+
+  # Identity used to build the canonical Person entity.
+  jobTitle   = "Security Engineer"
+  knowsAbout = ["Cloud Security", "Application Security", "Photography"]
+  sameAs = [
+    "https://www.instagram.com/7traindelay/",
+    "https://www.linkedin.com/in/alexkellermann/",
+    "https://github.com/akellermann97",
+  ]
+
 
 [markup]
   [markup.goldmark]

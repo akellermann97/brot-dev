@@ -1,6 +1,8 @@
 ---
-title: 'About Me'
+title: 'About Alex Kellermann'
+description: 'Alex Kellermann — Security engineer in NYC writing about cameras, photography, and sometimes even security.'
 weight: 10
+type: about
 layout: about
 ---
 
@@ -19,14 +21,14 @@ Hey! I'm Alex Kellermann, a Security Engineer based in New York City, Cloud Secu
 | Cybersecurity Engineer [**@MITRE**](https://mitre.org)         | *2019—2021* |
 
 ## Site Details:
-- Static Website hosted on GitHub Pages
+- Static Website hosted on CloudFlare Pages
 - Cloudflare for Analytics
 
 ## Socials:
 
 I can be found on some other places too!
 
+- [Blue Sky](https://bsky.app/profile/brot.dev)
 - [Instagram](https://www.instagram.com/7traindelay/)
-- [LinkedIn](https://www.linkedin.com/in/alexkellermann/)
 - [GitHub](https://github.com/akellermann97)
 
