@@ -1,6 +1,6 @@
 baseURL = 'https://brot.dev/'
 author = "Alex Kellermann"
-languageCode = 'en-us'
+locale = 'en-us'
 title = 'BROT.DEV 🍞'
 theme = 'brot'
 enableInlineShortcodes = true
@@ -19,6 +19,7 @@ author = "Alex Kellermann"
 defaultTheme = "auto"
 images = ["brotheader.png"]
 hideAuthor = true
+
 
 [params.label]
   text = "🍞 brot.dev"
