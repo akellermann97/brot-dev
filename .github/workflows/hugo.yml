@@ -48,6 +48,15 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      # Hugo writes processed images (preview thumbnails) to resources/_gen;
+      # cache it so deploys don't re-encode every image from scratch.
+      - name: Cache Hugo processed images
+        uses: actions/cache@v4
+        with:
+          path: resources
+          key: hugo-resources-${{ hashFiles('static/img/**') }}
+          restore-keys: |
+            hugo-resources-
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
