@@ -20,6 +20,7 @@ defaultTheme = "auto"
 images = ["brotheader.png"]
 hideAuthor = true
 
+
 [params.label]
   text = "🍞 brot.dev"
 
