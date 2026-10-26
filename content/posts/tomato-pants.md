@@ -1,8 +1,8 @@
 
 +++
 title = 'Making Tomato Pants'
-date = 2026-10-23T11:31:54-05:00
-draft = true
+date = 2026-10-26T00:19:16-04:00
+draft = false
 showreadingtime = false
 author = 'Alex Kellermann'
 showtoc = false
