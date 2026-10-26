@@ -1,0 +1,9 @@
+/* Keep disclosure blocks aligned with the post's reading column. */
+.post-content details {
+  max-width: var(--reading-width);
+  margin: 0 auto var(--content-gap);
+}
+
+.post-content details > summary {
+  cursor: pointer;
+}
