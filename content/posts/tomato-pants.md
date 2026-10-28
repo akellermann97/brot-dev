@@ -6,6 +6,8 @@ draft = false
 showreadingtime = false
 author = 'Alex Kellermann'
 showtoc = false
+tags = ["sewing", "tomato", "pants", "personal", "halide", "crafts"]
+summary = '''I saw some tomato pants by redhat.creative on Instagram and thought 'I could do that in a couple hours', turns out it takes about two years.'''
 
 [cover]
 image = '/img/tomato-pants/tomato_cover.jpg'
