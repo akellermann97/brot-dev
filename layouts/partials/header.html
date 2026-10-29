@@ -3,9 +3,25 @@
    Place at:  brot-dev/layouts/partials/header.html
 
    • Scroll-aware sticky header (see assets/css/extended/02-header.css).
-   • Theme toggle + dark-mode bootstrap REMOVED — the redesign is light only.
+   • Restored dark-mode bootstrap + theme toggle, retaining the custom header.
    • Lowercase wordmark (🍞 + site label) and a hamburger menu on mobile.
    ============================================================================ */ -}}
+
+{{- if not site.Params.disableThemeToggle }}
+<script>
+(function () {
+  var preference = localStorage.getItem('pref-theme');
+  var defaultTheme = {{ site.Params.defaultTheme | default "auto" | jsonify | safeJS }};
+  if (preference === 'dark' || (preference !== 'light' && (defaultTheme === 'dark' || (defaultTheme !== 'light' && window.matchMedia('(prefers-color-scheme: dark)').matches)))) {
+    document.body.classList.add('dark');
+  } else {
+    document.body.classList.remove('dark');
+  }
+})();
+</script>
+{{- else if and (ne site.Params.defaultTheme "light") (ne site.Params.defaultTheme "dark") }}
+<script>if (window.matchMedia('(prefers-color-scheme: dark)').matches) document.body.classList.add('dark');</script>
+{{- end }}
 
 <header class="header at-top" id="siteHeader">
   <nav class="nav">
@@ -37,6 +53,13 @@
       </li>
       {{- end }}
     </ul>
+
+    {{- if not site.Params.disableThemeToggle }}
+    <button id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode (Alt + T)" accesskey="t">
+      <svg id="moon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg id="sun" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+    </button>
+    {{- end }}
 
     <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
