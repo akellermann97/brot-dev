@@ -25,17 +25,13 @@
   if (media.addEventListener) media.addEventListener('change', applyTheme);
   else if (media.addListener) media.addListener(applyTheme);
 
-  document.addEventListener('DOMContentLoaded', function () {
-    var button = document.getElementById('theme-toggle');
-    if (!button) return;
-    // Register before the inherited theme footer's legacy click handler.
-    button.addEventListener('click', function (event) {
-      event.stopImmediatePropagation();
-      if (localStorage.getItem(key) === 'alternative') localStorage.removeItem(key);
-      else localStorage.setItem(key, 'alternative');
-      applyTheme();
-    });
-  });
+  window.brotToggleTheme = function (event) {
+    // Suppress the inherited theme footer's legacy light/dark storage handler.
+    event.stopImmediatePropagation();
+    if (localStorage.getItem(key) === 'alternative') localStorage.removeItem(key);
+    else localStorage.setItem(key, 'alternative');
+    applyTheme();
+  };
 })();
 </script>
 {{- else if and (ne site.Params.defaultTheme "light") (ne site.Params.defaultTheme "dark") }}
@@ -107,6 +103,10 @@
 (function () {
   var header = document.getElementById('siteHeader');
   if (!header) return;
+  var modeToggle = document.getElementById('theme-toggle');
+  if (modeToggle && window.brotToggleTheme) {
+    modeToggle.addEventListener('click', window.brotToggleTheme);
+  }
   var burger = document.getElementById('hamburger');
   var TOP = 8, DELTA = 6, lastY = window.scrollY || window.pageYOffset || 0;
 
