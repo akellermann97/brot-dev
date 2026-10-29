@@ -10,17 +10,43 @@
 {{- if not site.Params.disableThemeToggle }}
 <script>
 (function () {
-  var preference = localStorage.getItem('pref-theme');
-  var defaultTheme = {{ site.Params.defaultTheme | default "auto" | jsonify | safeJS }};
-  if (preference === 'dark' || (preference !== 'light' && (defaultTheme === 'dark' || (defaultTheme !== 'light' && window.matchMedia('(prefers-color-scheme: dark)').matches)))) {
-    document.body.classList.add('dark');
-  } else {
-    document.body.classList.remove('dark');
+  // Two states: follow the OS, or invert the OS preference.
+  var media = window.matchMedia('(prefers-color-scheme: dark)');
+  var key = 'pref-theme';
+  // Previous versions stored absolute light/dark choices. Reset those to system.
+  if (localStorage.getItem(key) !== 'alternative') localStorage.removeItem(key);
+
+  function applyTheme() {
+    var inverted = localStorage.getItem(key) === 'alternative';
+    document.body.classList.toggle('dark', inverted ? !media.matches : media.matches);
   }
+
+  applyTheme();
+  if (media.addEventListener) media.addEventListener('change', applyTheme);
+  else if (media.addListener) media.addListener(applyTheme);
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var button = document.getElementById('theme-toggle');
+    if (!button) return;
+    // Register before the inherited theme footer's legacy click handler.
+    button.addEventListener('click', function (event) {
+      event.stopImmediatePropagation();
+      if (localStorage.getItem(key) === 'alternative') localStorage.removeItem(key);
+      else localStorage.setItem(key, 'alternative');
+      applyTheme();
+    });
+  });
 })();
 </script>
 {{- else if and (ne site.Params.defaultTheme "light") (ne site.Params.defaultTheme "dark") }}
-<script>if (window.matchMedia('(prefers-color-scheme: dark)').matches) document.body.classList.add('dark');</script>
+<script>
+(function () {
+  var media = window.matchMedia('(prefers-color-scheme: dark)');
+  function applyTheme() { document.body.classList.toggle('dark', media.matches); }
+  applyTheme();
+  if (media.addEventListener) media.addEventListener('change', applyTheme);
+})();
+</script>
 {{- end }}
 
 <header class="header at-top" id="siteHeader">
