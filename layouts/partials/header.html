@@ -3,9 +3,52 @@
    Place at:  brot-dev/layouts/partials/header.html
 
    • Scroll-aware sticky header (see assets/css/extended/02-header.css).
-   • Theme toggle + dark-mode bootstrap REMOVED — the redesign is light only.
+   • Restored dark-mode bootstrap + theme toggle, retaining the custom header.
    • Lowercase wordmark (🍞 + site label) and a hamburger menu on mobile.
    ============================================================================ */ -}}
+
+{{- if not site.Params.disableThemeToggle }}
+<script>
+(function () {
+  // Two states: follow the OS, or invert the OS preference.
+  var media = window.matchMedia('(prefers-color-scheme: dark)');
+  var key = 'brot-theme-mode';
+  // Migrate the prior two-state preference, then drop the legacy key used by
+  // Brot theme's default light/dark toggle handler.
+  if (localStorage.getItem('pref-theme') === 'alternative') {
+    localStorage.setItem(key, 'alternative');
+  }
+  localStorage.removeItem('pref-theme');
+
+  function applyTheme() {
+    var inverted = localStorage.getItem(key) === 'alternative';
+    document.body.classList.toggle('dark', inverted ? !media.matches : media.matches);
+  }
+
+  applyTheme();
+  if (media.addEventListener) media.addEventListener('change', applyTheme);
+  else if (media.addListener) media.addListener(applyTheme);
+
+  window.brotToggleTheme = function (event) {
+    // Capture the click before the inherited footer's legacy bubble handler.
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    if (localStorage.getItem(key) === 'alternative') localStorage.removeItem(key);
+    else localStorage.setItem(key, 'alternative');
+    applyTheme();
+  };
+})();
+</script>
+{{- else if and (ne site.Params.defaultTheme "light") (ne site.Params.defaultTheme "dark") }}
+<script>
+(function () {
+  var media = window.matchMedia('(prefers-color-scheme: dark)');
+  function applyTheme() { document.body.classList.toggle('dark', media.matches); }
+  applyTheme();
+  if (media.addEventListener) media.addEventListener('change', applyTheme);
+})();
+</script>
+{{- end }}
 
 <header class="header at-top" id="siteHeader">
   <nav class="nav">
@@ -38,6 +81,13 @@
       {{- end }}
     </ul>
 
+    {{- if not site.Params.disableThemeToggle }}
+    <button id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode (Alt + T)" accesskey="t">
+      <svg id="moon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg id="sun" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+    </button>
+    {{- end }}
+
     <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -58,6 +108,10 @@
 (function () {
   var header = document.getElementById('siteHeader');
   if (!header) return;
+  var modeToggle = document.getElementById('theme-toggle');
+  if (modeToggle && window.brotToggleTheme) {
+    modeToggle.addEventListener('click', window.brotToggleTheme, true);
+  }
   var burger = document.getElementById('hamburger');
   var TOP = 8, DELTA = 6, lastY = window.scrollY || window.pageYOffset || 0;
 
