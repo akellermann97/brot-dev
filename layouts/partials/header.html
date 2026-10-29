@@ -12,9 +12,13 @@
 (function () {
   // Two states: follow the OS, or invert the OS preference.
   var media = window.matchMedia('(prefers-color-scheme: dark)');
-  var key = 'pref-theme';
-  // Previous versions stored absolute light/dark choices. Reset those to system.
-  if (localStorage.getItem(key) !== 'alternative') localStorage.removeItem(key);
+  var key = 'brot-theme-mode';
+  // Migrate the prior two-state preference, then drop the legacy key used by
+  // Brot theme's default light/dark toggle handler.
+  if (localStorage.getItem('pref-theme') === 'alternative') {
+    localStorage.setItem(key, 'alternative');
+  }
+  localStorage.removeItem('pref-theme');
 
   function applyTheme() {
     var inverted = localStorage.getItem(key) === 'alternative';
@@ -26,7 +30,8 @@
   else if (media.addListener) media.addListener(applyTheme);
 
   window.brotToggleTheme = function (event) {
-    // Suppress the inherited theme footer's legacy light/dark storage handler.
+    // Capture the click before the inherited footer's legacy bubble handler.
+    event.preventDefault();
     event.stopImmediatePropagation();
     if (localStorage.getItem(key) === 'alternative') localStorage.removeItem(key);
     else localStorage.setItem(key, 'alternative');
@@ -105,7 +110,7 @@
   if (!header) return;
   var modeToggle = document.getElementById('theme-toggle');
   if (modeToggle && window.brotToggleTheme) {
-    modeToggle.addEventListener('click', window.brotToggleTheme);
+    modeToggle.addEventListener('click', window.brotToggleTheme, true);
   }
   var burger = document.getElementById('hamburger');
   var TOP = 8, DELTA = 6, lastY = window.scrollY || window.pageYOffset || 0;
