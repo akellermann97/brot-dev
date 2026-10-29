@@ -5,7 +5,7 @@
    Re-declares the brand tokens so we DON'T have to replace the theme's
    core/theme-vars.css by path (which didn't take). Loaded last → wins.
 
-     • accent  ochre-gold  →  racing green  (one token: --br-accent / --accent)
+     • accent  ochre-gold  →  red  (one token: --br-accent / --accent)
      • sans / UI font  din2014  →  Neue DIN VAR  (per-role weights via --w-*)
      • Dark colors are inherited from the Brot theme. Site-specific accent colors
      retain readable contrast in both modes.
@@ -13,12 +13,12 @@
 
 :root {
   /* ---- accent: THE brand color. Change this one value to recolour. ---- */
-  --br-accent:       #0B3D2E;                                              /* deep racing / phthalo green */
+  --br-accent:       #D22B2B;                                              /* brand red */
   --br-accent-hover: color-mix(in srgb, var(--br-accent) 78%, white);
   --br-accent-soft:  color-mix(in srgb, var(--br-accent) 9%, transparent);
   --br-accent-line:  color-mix(in srgb, var(--br-accent) 22%, transparent);
   --br-accent-ink:   #ffffff;
-  --accent: var(--br-accent);     /* the theme's own token now points to green */
+  --accent: var(--br-accent);     /* the theme's own token follows the brand accent */
 
   /* ---- surfaces & ink (warm-paper identity) ---- */
   --theme:     rgb(250, 249, 246);
@@ -45,9 +45,9 @@
 
 /* ---- Dark palette: inherit the theme's dark surfaces and ink colors. ---- */
 .dark {
-  --br-accent:       #83C9AE;
-  --br-accent-hover: #A9E1CA;
+  --br-accent:       #FF6B6B;
+  --br-accent-hover: #FF9999;
   --br-accent-soft:  color-mix(in srgb, var(--br-accent) 14%, transparent);
   --br-accent-line:  color-mix(in srgb, var(--br-accent) 35%, transparent);
-  --br-accent-ink:   #102B22;
+  --br-accent-ink:   #281010;
 }
