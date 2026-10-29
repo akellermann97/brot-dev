@@ -185,7 +185,12 @@ body { padding-top: var(--header-height, 60px); }
 }
 #siteHeader #theme-toggle:hover { background: var(--tertiary); }
 #siteHeader #theme-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-#siteHeader #theme-toggle svg { display: block; width: 20px; height: 20px; margin: 0; transform: none; }
+#siteHeader #theme-toggle svg { width: 20px; height: 20px; margin: 0; transform: none; }
+/* Match the body's active theme. These scoped selectors beat the generic SVG rules. */
+#siteHeader #theme-toggle #sun { display: none; }
+#siteHeader #theme-toggle #moon { display: block; }
+body.dark #siteHeader #theme-toggle #moon { display: none; }
+body.dark #siteHeader #theme-toggle #sun { display: block; }
 @media screen and (max-width: 768px) {
   #siteHeader #theme-toggle { margin-left: auto; }
 }
